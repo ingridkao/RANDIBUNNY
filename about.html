@@ -25,19 +25,20 @@ body {
 }
 
 .header{
-    /* background-color: aqua; */
-    height: 20vh;
+     /* background-color: aqua; */
+    height: 10vh;
     width: 100vw;
-    position: relative;
     top: 0; 
     left: 0;
+    position: absolute;
+    display: flex;
 }
 
 .marquee-top{
     width: 100vw;
-    height: 1vh;
+    height: 2vh;
     background-color: #bf3a2a;
-    padding: 10px 0 50px 0;
+    padding: 20px 0 50px 0;
     position: absolute;
     right: 0;
     top: 0;
@@ -63,75 +64,92 @@ body {
         transform:translateX(-100%);
       }
 }
-.marqueebox-sec{
-    position: relative;
-    top: 8vh;
-}
-.marquee-sec{
-    width: 100vw;
-    height: 1vh;
-    background-color: #CDA97E;
-    padding: 10px 0 50px 0;
-    position: absolute;
-    right: 0;
-    overflow: hidden;
-    font-size: 2.5vw;
 
-}
-.marquee-sec >.text{
-    animation: runright linear 13s infinite; 
-}
 
 .container{
-    height: 80vw;
+    height: 120vh;
     width: 1200px;
-    position: relative;
+    /* background-color: aquamarine; */
     inset: 0;
     margin: auto;
-    /* background-color: blue; */
     display: flex;
-    flex: 1;
 }
 
-.title{
-   position: relative;
-   left: 35%;
-   top: 8%;
-}
+.title-box{
+    width: 100vw;
+    height: 40vh;
+    /* background-color: blue; */
+    position: relative;
+    top: 20%;
+    left: 15%;
+} 
+
 .title img{
-    width: 80%;
+    width: 100%;
     height: auto;
 }
 
-.introduce-first{
-    position: absolute;
-    /* padding: 0 150px 0 150px; */
-    right: 6%;
-    top: 25%; 
-}
+.int-first-box{
+    width: 100vw;
+    height: 40vh;
+    /* background-color: #583513; */
+    position:relative;
+    top: 30%;
+    left: 20%;
+    box-sizing: border-box;
+
+} 
 
 .introduce-first img{
-    width: 75%;
+    width: 130%;
     height: auto;   
 }
 
-.introduce-sec{
-    position: absolute;
-    left: 23%;
-    top: 66%;
+.about-me-box{
+    /* background-color: #bf3a2a; */
+    width: 50%;
+    height: 4vh;
+    position:relative;
+    top: 60%;
+    left: 20%;
 }
 
+.about-txt {
+    color: rgb(27,27,27);
+    font-size: 2vw;
+    font-family: 'Paytone One', sans-serif;
+}
+
+.int-sec-box{
+    width: 100vw;
+    height: 40vh;
+    /* background-color: #58134a; */
+    position: relative;
+    top: 65%;
+    left: -50%;
+} 
+
 .introduce-sec img{
-    width: 80%;
+    width: 130%;
     height: auto;
 }
 
-.star{
+.star-one{
     position: absolute;
-    top: 120%;
+    top: 100%;
     right: 10%;
-
 }
+
+.star-two{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+
+.star-two img{
+    width: 40%;
+}
+
 
 
 </style>
@@ -148,12 +166,6 @@ body {
                 <div class="text">WELCOME TO RANDI BUNNY ❤WELCOME TO RANDI BUNNY ❤ </div>
             </div>
     </div>
-
-        <div class="marqueebox-sec">
-            <div class="marquee-sec">
-                <div class="text">WELCOME TO RANDI BUNNY ❤WELCOME TO RANDI BUNNY ❤ </div>
-        </div>
-    </div>
 </div>
 
 
@@ -166,18 +178,35 @@ body {
                 <div class="btn-back"> </div>
         </div>
 
-        <div class="title">
-            <a href="guide-page.html"><img src="image/about-title.svg"></a></div>
+        <div class="title-box">
+            <div class="title">
+                <a href="guide-page.html"><img src="image/about-title.svg"></a></div>
+        </div>
+        
 
-        <div class="introduce-first">
-            <img src="image/about-introduce-first.svg"></div>
-
-        <div class="introduce-sec">
-            <img src="image/about-introduce-sec.svg"></div>
+        <div class="int-first-box">
+            <div class="introduce-first">
+                <img src="image/about-introduce-first.svg"></div>
+        </div>    
       
-        <div class="star">
+        <div class="about-me-box">
+            <div class="about-txt"> ↪INTRODUCE MYSELF</div>
+             </div>
+
+        <div class="int-sec-box">
+            <div class="introduce-sec">
+                <img src="image/about-introduce-sec.svg"></div>
+        </div>
+
+      
+        <div class="star-one">
             <img src="image/about-start.svg"></div>
     </div>
+
+        <div class="star-two">
+            <img src="image/about-start.svg"></div>
+    </div>
+
 
     <div class="footer">
 
