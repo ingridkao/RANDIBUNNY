@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+html, 
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: black;
+}
+
+@property --length {
+  syntax: '<length>';
+  inherits: false;
+  initial-value: 0.00085px;
+}
+
+div {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.next{
+    margin-bottom:0;
+}
+.next a{
+    text-decoration: none;
+    font-size: 42px;
+    color: black;
+}
+
+div {
+    background-image: repeating-radial-gradient(
+        circle at 17% 32%,
+        rgb(4, 4, 0),
+        rgb(52, 72, 197),
+        rgb(115, 252, 224),
+        rgb(116, 71, 5),
+        rgb(223, 46, 169),
+        rgb(0, 160, 56),
+        rgb(234, 255, 0) var(--length)
+    );
+    animation: change 1s infinite alternate;
+}
+
+@keyframes change {
+    100% {
+        --length: 0.0009px;
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div></div>
+    <div class="next">
+        <a href="index.html">123</a>
+         </div>
+  
+</body>
+</html>

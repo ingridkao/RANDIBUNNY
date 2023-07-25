@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="item.css">
+    <title>News</title>
+  <style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+html{
+    /* overflow-x: hidden;
+    overflow-y: auto; */
+    background-color: #E4D7CA;
+    
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: #3B3A3A; */
+    /* background-attachment: fixed;
+    background-image: url("image/bgp-noise.svg");
+    background-repeat: repeat;
+    background-size: 20%; */
+    
+}
+
+.header{
+    /* background-color: aqua; */
+    width: 100%;
+    width: 100vw;
+    position: absolute;
+}
+
+.container{
+    height: 90vh;
+    width: 1200px;
+    inset: 0;
+    margin: auto;
+    background-color: #3B3A3A;
+    padding: 0 5px 0 ;
+    box-sizing: border-box;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    /* flex: 1; */
+}
+
+.box-top{
+    width: 100%;
+    height: 70vh;
+    /* background-color: #4dbfac; */
+    /* padding-left: 10px; */
+    /* padding-top: 100px; */
+    box-sizing: border-box;
+    display: block;
+}
+
+.top-txt-box{
+    /* width: 41%; */
+    width: 100%;
+    height: 20vh;
+    /* position: relative; */
+    /* padding: 5pt 0 0 0pt; */
+    /* top: -150%; */
+    padding-top: 10px;
+    box-sizing: border-box;
+    /* background-color: #FBC848; */
+}
+.box-top-text a{
+    font-family: 'Paytone One', sans-serif;
+    /* background-color: #8393e4; */
+    text-decoration: none;
+    justify-items: center;
+    left: 41%;
+    position:absolute;
+    color: #F2E8D9;
+    font-size: 6vw;
+    animation: LetterColor 3s linear infinite;
+}
+
+@keyframes LetterColor {
+    0% {
+        color: #fff;
+        text-shadow: 
+        0 0 10px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 80px #00b3ff,
+        0 0 120px #00b3ff,
+        0 0 200px #00b3ff,
+        0 0 300px #00b3ff,
+        0 0 400px #00b3ff;
+        filter: blur(2px) hue-rotate(0deg);
+    }
+    30%,
+    70% {
+        color: #fff;
+        text-shadow: 
+        0 0 10px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 80px #00b3ff,
+        0 0 120px #00b3ff,
+        0 0 200px #00b3ff;
+        filter: blur(2px) hue-rotate(360deg);
+    }
+    100% {
+        color: transparent;
+        text-shadow: none;
+        filter: blur(2px) hue-rotate(0deg);
+    }
+} 
+
+.neon-box{
+    width: 100%;
+    height: 50vh;
+    padding: 10px 300px ;
+    box-sizing: border-box;
+    background-color: blue;
+}
+.neon{
+    /* background-color: rgb(78, 16, 69); */
+    width: 30vw; 
+    top:-20%; 
+}
+
+.neon img{
+    width: 100%;
+    height: auto;
+}
+
+.box-middel{
+    width: 100%;
+    height: 15vh;
+    background-color: #2abf5e;
+    position: relative;
+    /* left: 27%; */
+   
+}
+
+.arrow{
+   width: 15vw;
+
+}
+.arrow img{
+    width: 100%;
+    height: auto;
+}
+
+.box-middel img{
+    width: 100%;
+}
+
+.box-transition{
+    width: 100%;
+    height: 5vh;
+    background-color: #4dbfac;
+}
+
+.transition-pic{}
+.transition-pic img{
+    width: 100%;
+}
+
+.box-bottom{
+    width: 100vw;
+    height: 10vh;
+    background-color: #E4D7CA;
+}
+
+
+
+.footer{
+    width: 100vw;
+    background-color: #E4D7CA;
+    position: absolute;
+}
+
+.footer-top{
+    width: 100%;
+    height: 5vh;
+    background-color: #bf3a2a;
+    box-sizing: border-box;
+    padding: 5pt 0 0 0;
+}
+
+.marqueebox-bottom{
+    width: 100vw;
+    /* height: .3vh; */
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+    font-size: 1.5vw; 
+    /* background-color: #bf3a2a; */
+
+}
+
+.bottom-text{
+    font-family:'Showcard Gothic', sans-serif;
+    color: #FBC848;
+    text-align: right;
+    position: relative;
+    transform: translateX(50%);
+    animation: runright linear 10s infinite; 
+} 
+
+.footer-main{
+    width: 100%;
+    height: 65vh;
+    /* border: 4px solid greenyellow; */
+    display: flex;
+}
+
+.footer-left{
+    width: 50%;
+    height: 65vh;
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    padding: 14pt 130pt 180pt;
+    /* background-color: aqua; */
+}
+
+.contacts-box{
+    position: absolute;
+}
+
+.phone{
+     width: 20vw;
+}
+
+.phone img{
+    width: 100%;
+    height: 100%;   
+}
+
+.footer-right{
+    width: 50%;
+    height: 65vh;
+    /* background-color: blueviolet; */
+    position: absolute;
+    right: 0;
+}
+
+.scbcribe-box{
+    width: 35vw;
+    height: 32vh;
+    position: absolute;
+    top: 13%;
+    background-color: #ebebeb;
+}
+
+.top-txt{
+    padding: 35px 0 0 15px;
+}
+
+.top-txt >h2{
+    font-family: 'Paytone One', sans-serif;
+    font-size: 1.5vw;
+    padding: 0 0 10px 0;
+    color:rgb(27, 27, 27);
+}
+
+.top-txt >h3{
+    font-family: 'Battambang', sans-serif;
+    font-size: 1.1vw;
+    color:rgb(27, 27, 27);
+}
+
+.email{
+    padding: 35px 0 5px 15px;
+    font-family: 'Basic', sans-serif;
+    font-size: 7pt;
+    color: #555252;
+    border-bottom: 1px solid rgb(27, 27, 27);
+}
+
+.send-box{
+    width: 7vw;
+    height: 8vh;
+    padding: 15px 0 0 15px;
+    box-sizing: border-box;
+}
+
+.send{
+    width: 5vw;
+    height: 4vh;
+    background-color: #B7B5B5;
+    border-radius: 20px;
+}
+
+.send-txt{
+    font-family: 'Paytone One', sans-serif;
+    font-size: .9vw;
+    color:rgb(27, 27, 27);
+    display: block;
+    padding: 5px 18px 0 ;
+    /* padding: 5px 0 0 0; */
+    text-decoration: none;
+}
+
+.footer-bottom{
+    width: 100vw;
+    height: 11vh;
+    position: absolute;
+    bottom: 0;
+    background-color: #bf3a2a;
+}
+
+.bottom-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.bottom-box{
+    padding-top: 20pt;
+}
+
+.txt{
+    font-family: 'Paytone One', sans-serif;
+    font-size: 1.5vw;
+    color: rgb(27, 27, 27);
+    text-decoration: none;
+}
+
+.icon{
+    display: flex;
+}
+
+.icon >a{
+    width: 2vw;
+    margin-left: 30pt;
+    padding-top: 20pt;
+}
+
+.icon >a img{
+    width: 100%;
+}   
+
+
+</style>
+</head>
+<body>
+    <div class="wrap">
+
+        <div class="header">
+            <div class="btn">
+                <div class="btn-top">
+                    <a href="menu.html" class="btn-txt">MENU</a></div>
+                    <div class="btn-back"> </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="box-top">
+                .
+                <div class="top-txt-box">
+                    <div class="box-top-text">
+                        <a href="guide-page.html">NEWS</a></div>
+                <div class="neon-box">
+                    <div class="neon">
+                        <img src=" image/news-neon.svg"></div>    
+                </div>
+                       
+            </div>
+               
+            
+                   
+                <div class="text"> </div>
+            
+            </div>
+
+            <div class="box-middel">
+                <div class="arrow">
+                    <img src=" image/news-arrow.svg"></div>
+                
+            </div>
+            
+            <div class="box-transition">
+                <div class="transition-pic">
+                    <img src=" image/news-bg.svg"></div>
+            </div>
+
+            
+        </div>
+       
+        <div class="box-bottom"></div>
+
+        <div class="footer">
+            <div class="footer-top">
+                <div class="marqueebox-bottom">
+                    <div class="marquee-bottom">
+                      <div class="bottom-text">RANDI BUNNY ❤ RANDI BUNNY ❤RANDI BUNNY ❤RANDI BUNNY ❤ </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer-main">
+    
+                <div class="footer-left">
+                    <div class="contacts-box">
+                        <div class="phone">
+                            <img src="image/about-phone.svg"></div>
+    
+                    </div>
+                </div>
+    
+                <div class="footer-right">
+    
+                    <div class="scbcribe-box">
+                        <div class="top-txt">
+                        <h2>SCBSCRIBE</h2>
+                        <h3>Don't pass notes — subscribe to our email list.</h3></div>
+                        <p class="email">Email address</p>
+                        <div class="send-box">
+                            <div class="send">
+                                <a class="send-txt" href="#">SEND</a></div>
+                        
+                        </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+    
+                <div class="bottom-btn">
+    
+                    <div class="payment">
+                        <div class="bottom-box">
+                            <a href="#" class="txt">PAYMENT&SHIPPING </a></div>
+                    </div>
+    
+                    <div class="contact">
+                        <div class="bottom-box">
+                            <a href="#" class="txt">CONTACT </a></div>
+                        </div>
+    
+                    <div class="faq">
+                        <div class="bottom-box">
+                            <a href="#" class="txt">FAQ </a></div>
+                    </div>
+                    <div class="icon">
+                        <a class="fb "href="#"><img src="image/facebook icon.svg"></a>
+                        <a class="ig "href="#"><img src="image/instagram icon.svg"></a></div>
+                </div> 
+            </div> 
+    
+            
+        </div>
+        </div> 
+ 
+
+
+    </div>
+
+
+
+
+
+</body>
+</html>

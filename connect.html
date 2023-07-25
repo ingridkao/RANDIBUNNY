@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>光亮效果</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+
+    body{
+    height: 100vh;
+    /* 彈性布局 水平+垂直居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+h1{
+    /* 文本透明 */
+    color: transparent;
+    font-size: 60px;
+    letter-spacing: 5px;
+    /* 渐变背景 */
+    background: linear-gradient(to right,#000,#fff,#000);
+    /* 裁剪掉文字以外的区域 */
+    -webkit-background-clip: text;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* 执行动画：动画名 时长 线性 无线播放 */
+    animation: move 2s linear infinite;
+}
+.btn{
+  background-color: #000;
+}
+
+/* 定义动画 */
+@keyframes move {
+    0%{
+        background-position: -500%;
+    }
+    100%{
+        background-position: 500%;
+    }
+}
+
+    /* 掃光效果 */
+  /* .body{
+        width: 1920px;
+    }
+  .line3 {
+      height: 1920px;
+      background: repeating-linear-gradient(to right, #434343 0%, #fff 3%, #434343 5%, #434343 100%);
+      animation: gogo 3s linear 0s infinite normal;
+    }
+
+  @keyframes gogo {
+      0% {
+        background-position: 0%;
+      }
+      100% {
+        background-position: 1920px;
+      }
+    } */
+  
+  </style>
+
+<body>
+
+  <!-- 掃光效果 -->
+  <!-- <div class='line3'></div> -->
+
+  <h1>Hello Stranger  </h1>
+  <input class=btn, type="button"  name="btn" value="" onclick="javascript:location.href='index.html' ">
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="item.css">
+    <title>About</title>
+    <style  type="text/css">
+         @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+html{
+    /* overflow-x: hidden;
+    overflow-y: auto; */
+    background-color: #E4D7CA;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-image: url("image/about-heart.svg");
+    background-repeat: repeat;
+    background-size: 50%;
+}
+
+.header{
+    /* background-color: aqua; */
+    height: 20vh;
+    width: 100vw;
+    position: relative;
+    top: 0; 
+    left: 0;
+}
+
+.marquee-top{
+    width: 100vw;
+    height: 1vh;
+    background-color: #bf3a2a;
+    padding: 10px 0 50px 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    font-size: 2.5vw;
+}
+
+.text{
+    font-family:'Showcard Gothic', sans-serif;
+    -webkit-text-stroke: 2px black;
+    -webkit-text-fill-color: transparent;
+    text-align: right;
+    position: relative;
+    transform: translateX(50%);
+    animation: runright linear 10s infinite; 
+ }
+
+    @keyframes runright {
+      0%{
+        transform:translateX(50%);
+      }
+      100%{
+        transform:translateX(-100%);
+      }
+}
+.marqueebox-sec{
+    position: relative;
+    top: 8vh;
+}
+.marquee-sec{
+    width: 100vw;
+    height: 1vh;
+    background-color: #CDA97E;
+    padding: 10px 0 50px 0;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+    font-size: 2.5vw;
+
+}
+.marquee-sec >.text{
+    animation: runright linear 13s infinite; 
+}
+
+.container{
+    height: 80vw;
+    width: 1200px;
+    position: relative;
+    inset: 0;
+    margin: auto;
+    /* background-color: blue; */
+    display: flex;
+    flex: 1;
+}
+
+.title{
+   position: relative;
+   left: 35%;
+   top: 8%;
+}
+.title img{
+    width: 80%;
+    height: auto;
+}
+
+.introduce-first{
+    position: absolute;
+    /* padding: 0 150px 0 150px; */
+    right: 6%;
+    top: 25%; 
+}
+
+.introduce-first img{
+    width: 75%;
+    height: auto;   
+}
+
+.introduce-sec{
+    position: absolute;
+    left: 23%;
+    top: 66%;
+}
+
+.introduce-sec img{
+    width: 80%;
+    height: auto;
+}
+
+.star{
+    position: absolute;
+    top: 120%;
+    right: 10%;
+
+}
+
+
+</style>
+</head>
+
+
+<body>
+<div class="wrap">
+
+    <div class="header">
+
+        <div class="marqueebox-top">
+            <div class="marquee-top">
+                <div class="text">WELCOME TO RANDI BUNNY ❤WELCOME TO RANDI BUNNY ❤ </div>
+            </div>
+    </div>
+
+        <div class="marqueebox-sec">
+            <div class="marquee-sec">
+                <div class="text">WELCOME TO RANDI BUNNY ❤WELCOME TO RANDI BUNNY ❤ </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <div class="container">
+
+        <div class="btn">
+            <div class="btn-top">
+                <a href="menu.html" class="btn-txt">MENU</a></div>
+                <div class="btn-back"> </div>
+        </div>
+
+        <div class="title">
+            <a href="guide-page.html"><img src="image/about-title.svg"></a></div>
+
+        <div class="introduce-first">
+            <img src="image/about-introduce-first.svg"></div>
+
+        <div class="introduce-sec">
+            <img src="image/about-introduce-sec.svg"></div>
+      
+        <div class="star">
+            <img src="image/about-start.svg"></div>
+    </div>
+
+    <div class="footer">
+
+        <div class="footer-top">
+            <div class="marqueebox-bottom">
+                <div class="marquee-bottom">
+                  <div class="bottom-text">RANDI BUNNY ❤ RANDI BUNNY ❤RANDI BUNNY ❤RANDI BUNNY ❤ </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-main">
+
+            <div class="footer-left">
+                <div class="contacts-box">
+                    <div class="phone">
+                        <img src="image/about-phone.svg"></div>
+
+                </div>
+            </div>
+
+            <div class="footer-right">
+
+                <div class="scbcribe-box">
+                    <div class="top-txt">
+                    <h2>SCBSCRIBE</h2>
+                    <h3>Don't pass notes — subscribe to our email list.</h3></div>
+                    <p class="email">Email address</p>
+                    <div class="send-box">
+                        <div class="send">
+                            <a class="send-txt" href="#">SEND</a>
+                            <!-- <div class="send-txt">SEND</div> -->
+                    </div>
+                    
+                    </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+
+            <div class="bottom-btn">
+
+                <div class="payment">
+                    <div class="bottom-box">
+                        <a href="#" class="txt">PAYMENT&SHIPPING </a></div>
+                </div>
+
+                <div class="contact">
+                    <div class="bottom-box">
+                        <a href="#" class="txt">CONTACT </a></div>
+                    </div>
+
+                <div class="faq">
+                    <div class="bottom-box">
+                        <a href="#" class="txt">FAQ </a></div>
+                </div>
+                <div class="icon">
+                    <a class="fb "href="#"><img src="image/facebook icon.svg"></a>
+                    <a class="ig "href="#"><img src="image/instagram icon.svg"></a></div>
+            </div> 
+        </div>
+
+
+    </div>
+</div>
+
+</body>
+</html>

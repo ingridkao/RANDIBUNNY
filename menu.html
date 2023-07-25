@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+body::-webkit-scrollbar {
+    display: none;
+} 
+
+.body{
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: burlywood; */
+}
+
+.top-pic{
+    width: 100%; 
+    height: 25px;
+    position: fixed;
+}
+
+.header{
+    height: 5vh;
+    width: 100vw;
+    top:0;
+    left: 0;
+    display: flex;
+    margin: auto;
+    padding: 20px 0  80px 50px;
+    position: relative;
+   /* background-color: #A33A3A;  */
+}
+.btn{
+    padding: 15px;
+    display: flex;
+}
+
+.btn-top{
+    width: 112px;
+    height: 49px;
+    position: absolute;
+    background-color: rgb(27, 27, 27);
+    border: 2px solid #ebebeb;
+    border-radius: 10px;
+    top: 23%;
+    left: 3%;
+    z-index: 998;
+}
+
+.btn-back{
+    width: 112px;
+    height: 55px;
+    background-color: rgb(27, 27, 27);
+    border-radius: 10px;
+    position: relative;
+    left: -20%;
+
+}
+
+.btn-txt{
+    font-family: 'Paytone One', sans-serif;
+    color:  #ebebeb;
+    font-size: 18px;
+    text-decoration: none; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    text-align: center;
+ 
+ }  
+
+.btn-top:hover{
+    margin-top: -2px;
+    margin-left: 10px; 
+} 
+
+.title{
+    top: 30%;
+    left: 35%;
+    width: 25vw;
+    position: absolute;
+}
+
+.title img{ 
+    width: 100%;
+    vertical-align: top;
+}
+.header nav{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    left:70%;
+    top: 50%;
+}
+
+.log-in{
+    padding: 10px 0 0 0;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.log-in img{
+    width: 70%;
+}
+
+.cart{
+    display: inline-block;
+    padding: 0 0 0 70px;
+}
+.cart img{
+    width: 70%;
+}
+
+.container{
+    /* background-color: rgb(21, 44, 159); */
+    height: 90vh;
+    width: 1200px;
+    display: flex;
+    inset: 0;
+    margin: auto;
+    padding: 30px 180px 0 90px;
+    position: relative;
+    box-sizing: border-box;
+}
+.sticker{
+    position: absolute;
+    z-index: 999;
+    left: 35%;
+    top: 8%;
+    width: 6%;
+}
+.axis{
+    display: inline-block;
+    position: relative;
+    left: 40%;
+    right: 50%;
+    top: 5%;
+    height: 80%; 
+}
+
+
+.all-button{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 85px  ;
+    justify-content: space-around;
+    position: relative;
+    left: 40%;
+    right: 50%;
+} 
+
+.button-top{
+    width: 12vw;
+    height: 6vh;
+    position: absolute;
+    background-color: rgb(27, 27, 27);
+    border: 2px solid #ebebeb;
+    border-radius: 10px;
+    padding: 0 0 10px 0;
+    left: 6%;
+} 
+.button-back{
+    display: flex;
+    width: 12vw;
+    height: 6vh;
+    background-color: rgb(27, 27, 27);
+    border-radius: 10px;
+    padding: 10px 0 10px 0;
+    top: -2%;
+
+} 
+.button-txt{
+    font-family: 'Paytone One', sans-serif;
+    color:  #ebebeb;
+    font-size: 14pt;
+    text-decoration: none; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    text-align: center;
+
+ }  
+ .button-top:hover{
+    background-color:#bf3a2a;
+    border: 2px solid rgb(27, 27, 27);
+}
+
+.footer{
+    background-color: #A33A3A;
+    height: 5vh;
+    bottom: 0;
+    left: 0;
+    padding: 20px 80px 100px 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.bottom-btn{
+    display: flex;
+   
+}
+.bottom-box{
+    width: 10vw;
+    height: 6vh; 
+    box-sizing: border-box;
+    background-color: rgb(27, 27, 27);
+    border-radius: 10px;
+    /* padding: 5px 10px 15px; */
+    margin: 0px 35px 40px 100px;
+
+} 
+.txt{
+    font-family: 'Paytone One', sans-serif;
+    text-decoration: none; 
+    color:#ebebeb ;
+    box-sizing: content-box;
+    font-size: 14pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2px;
+    text-align: center;
+}
+.bottom-box:hover{
+    background-color:#ebebeb ;
+    border: 2px solid rgb(27, 27, 27);
+}
+.txt:hover{
+    color:rgb(27, 27, 27);
+}
+.bottom-icon{
+    display: flex;
+    flex-direction: row;
+} 
+.facebook{
+    margin: 0 70px 00;
+    width: 15%;
+}
+.instagram{
+    width: 15%;
+}
+
+.fixed-bottom {
+    width: 100%;
+    height: 25px;
+    position: fixed;
+    bottom: 0;
+}
+
+</style>
+</head>
+
+
+
+<body>
+   
+    <img class=top-pic src="image/格紋.svg" >
+
+    <div class="wrap">
+        
+    <div class="header">
+      
+        <div class="btn">
+            <div class="btn-top">
+                <a href="guide-page.html" class="btn-txt">CLOSE</a></div>
+            <div class="btn-back"></div>
+        </div>
+            
+        <div class="title">
+            <a href="guide-page.html" ><img src="image/menu-title.svg" alt="網站名稱">
+            </a>
+        </div>
+        
+    <nav> 
+       <div class="top-icon">
+            <div class="log-in">
+                <a href="#" ><img src="image/log-in.svg" alt="登入"></a></div>
+             <div class="cart">
+                <a href="#" ><img src="image/cart.svg" alt="購物車"></a></div>
+        </div>
+    </nav>  
+    </div>
+    
+
+    <div class="container">
+        <img class="sticker" src="image/menu-sticker.svg" > 
+        <img class="axis" src="image/menu-axis.svg" >
+     
+        <div class="all-button"> 
+
+        <div class="button-about"> 
+            <div class="button-top">
+             <a href="about.html" class="button-txt">A B O U T  </a></div>
+           <div class="button-back"> </div> 
+        </div> 
+     
+        <div class="button-news">
+            <div class="button-top">
+                <a href="#" class="button-txt">N E W S </a></div>
+           <div class="button-back"></div> 
+        </div> 
+
+        <div class="button-member">
+            <div class="button-top">
+                <a href="#" class="button-txt">M E M B E R </a></div>
+            <div class="button-back"> </div> 
+        </div>
+
+        <div class="button-gallery">
+            <div class="button-top">
+                <a href="#" class="button-txt">G A L L E R Y</a></div>
+            <div class="button-back"> </div> 
+        </div>
+
+        <div class="button-product">
+            <div class="button-top">
+                <a href="#" class="button-txt">P R O D U C T </a></div>
+           <div class="button-back"> </div> 
+        </div> 
+    </div> 
+    </div> 
+
+     <div class="footer">
+
+        <div class="bottom-btn">
+
+        <div class="login">
+        <div class="bottom-box"> 
+            <a href="#" class="txt">LOG-IN </a></div>
+        </div>
+
+        <div class="contact">
+        <div class="bottom-box">
+            <a href="#" class="txt">CONTACT </a></div>
+        </div>
+        
+        <div class="faq">
+        <div class="bottom-box">
+            <a href="#" class="txt">FAQ </a></div>
+        </div>
+    
+        <div class="bottom-icon">
+            <img class="facebook" src="image/facebook icon.svg" > 
+            <img class="instagram" src="image/instagram icon.svg" >
+        </div>     
+    </div>
+    <div class="fixed-bottom">
+        <img src="image/格紋.svg" > 
+    </div> 
+
+</div> 
+
+
+
+
+
+</body>
+</html>

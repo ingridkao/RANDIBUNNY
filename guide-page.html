@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <title>guide-page</title>
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+   
+    body::-webkit-scrollbar {
+    display: none;
+    } 
+
+    html{
+        background-color: #bf3a2a;
+    }
+
+    body{
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .wrap{
+        padding: 100px 380px 0 250px;
+        box-sizing: border-box;
+    }
+
+    .inside-box{
+        width: 63vw;
+        height: 70vh;
+        border-radius: 20px;
+        background-color: #ebebeb;
+        border: 2px solid rgb(27,27,27);
+    }
+
+    .box-shadow-top{
+        display: block;
+        width: 63vw;
+        height: 5vh;
+        background-color: #C4C5C2;
+        border-radius: 20px;
+    }
+
+    .box-center{
+        display: flex;
+        width: 63vw;
+        height: 5vh;
+        background-color: #ebebeb;
+        border: 2px solid rgb(27,27,27);
+        position: relative;
+        top: 49%;   
+    }
+
+    .box-shadow{
+        display: block;
+        width: 63vw;
+        height: 4vh;
+        background-color: #C4C5C2;
+        position: relative;
+        top: 49%;   
+    }
+  
+    .box-bottom{
+        display: block;
+        width: 63vw;
+        height: 5vh;
+        background-color: #ebebeb;
+        border-radius: 20px;
+        border: 2px solid rgb(27,27,27);
+        top: -5%;   
+        position: relative;
+    }
+
+    .logo{
+        display: flex;
+        position: absolute;
+        top: 19%;
+        left: 43%;
+    }
+
+    .logo img{
+       width: 60%;
+    }
+
+    .rabbit-first:hover{
+        background-color: aqua;
+        border-radius: 50%;
+    }
+
+    .rabbit-sec:hover{
+        background-color: #FBC848;
+        border-radius: 50%;
+    }
+
+    .rabbit-third:hover{
+        background-color: #bdbbff;
+        border-radius: 50%;
+    }
+
+    .rabbit-fourth:hover{
+        background-color: #59acff;
+        border-radius: 50%;
+    }
+
+    .top-drink{
+        /* position: relative; */
+        position: absolute;
+        display: flex;
+        /* justify-content: space-around; */
+        top: 37%;
+        left: 30%;
+        /* top: -69%;
+        left: 6%; */
+    }
+
+    .drink-about{
+        padding: 0 150px 0 0;
+    } 
+    
+    .drink-news{
+        padding: 0 150px 0 0;
+    }
+
+    .down-drink{
+        position: absolute;
+        display: flex;
+        top: 68%;
+        left: 39%;
+    }
+
+    .drink-gallery{
+        /* background-color: red; */
+        padding: 0 145px 0 0;
+    }
+
+    .drink-product{
+        /* background-color: blue; */
+        position: relative;
+        top: -15%;
+    }
+    
+    .top-drink-btn{
+        position: absolute;
+        display: flex;
+        top: 59%;
+        left: 30.5%;
+    }
+
+    .top-drink-btn img{
+        width: 100%;
+    }
+
+    .drink-about-btn{
+        padding: 0 165px 0 0;
+    }
+
+    .drink-news-btn{
+        padding: 0 160px 0 0;
+    }
+
+    .down-drink-btn{
+        position: absolute;
+        top: 90%;
+        left: 40%;
+
+    }
+
+    .drink-gallery-btn{
+        padding: 0 170px 0 0;
+    }
+    
+   
+    </style>
+</head>
+<body>
+
+    <div class="wrap">
+
+        <div class="inside-box">
+            <div class="box-shadow-top"></div>
+            <div class="box-center"></div>
+            <div class="box-shadow"></div>        
+    </div>
+            <div class="box-bottom"></div>
+            
+             <div class="logo">
+                <img class= "rabbit-first" src="image/guide-page-rabbit.svg">
+                <img class= "rabbit-sec" src="image/guide-page-rabbit.svg" >
+                <img class= "rabbit-third" src="image/guide-page-rabbit.svg" >
+                <img class= "rabbit-fourth" src="image/guide-page-rabbit.svg" > 
+            </div>
+        
+
+            <div class="top-drink">
+                <a href="about.html"><img class= "drink-about" src="image/guide-page-about.svg"></a>
+                <a href="news.html"><img class= "drink-news" src="image/guide-page-news.svg"></a>
+                <a href="member.html"><img class= "drink-member" src="image/guide-page-member.svg"></a>
+            </div>
+
+            <div class="down-drink">
+                <a href="gallery.html"><img class= "drink-gallery" src="image/guide-page-gallery.svg"></a>
+                <a href=""><img class= "drink-product" src="image/guide-page-product.svg"></a>
+            </div>
+
+            <div class="top-drink-btn">
+                <img class= "drink-about-btn" src="image/guide-page-about-btn.svg">
+                <img class= "drink-news-btn" src="image/guide-page-news-btn.svg">
+               <img class= "drink-member-btn" src="image/guide-page-member-btn.svg">
+            </div>
+
+            <div class="down-drink-btn">
+               <img class= "drink-gallery-btn" src="image/guide-page-gallery-btn.svg">
+               <img class= "drink-product-btn" src="image/guide-page-product-btn.svg">
+            </div>
+
+    </div>
+    
+    
+</body>
+</html>

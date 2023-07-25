@@ -1,0 +1,33 @@
+.btn-back{
+    width:100px;
+    height: 49px;
+    display: block;
+    background-color: black;
+    border-radius: 10px;
+    position: fixed;
+    top:30px;
+    left: 158px;
+}
+
+.btn-top{
+    width:100px;
+    height: 49px;
+    display: block;
+    background-color: #bf3a2a;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: fixed;
+    top:20px;
+    left:165px
+}
+
+.btn-txt{
+    font-family: 'Paytone One', sans-serif;
+    color:  #E4D7CA;
+    font-size: 20px;
+    padding: 10px 22px ;
+}
+
+.btn-top:hover{
+   background-color: #E6BB38;
+}
