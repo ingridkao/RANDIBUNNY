@@ -19,12 +19,7 @@ html{
 body {
     width: 100%;
     min-height: 100vh;
-    /* background-color: #3B3A3A; */
-    /* background-attachment: fixed;
-    background-image: url("image/bgp-noise.svg");
-    background-repeat: repeat;
-    background-size: 20%; */
-    
+    background-color: #3B3A3A;
 }
 
 .header{
@@ -35,29 +30,55 @@ body {
 }
 
 .container{
-    height: 90vh;
+    height: 130vh;
     width: 1200px;
     inset: 0;
     margin: auto;
     background-color: #3B3A3A;
-    padding: 0 5px 0 ;
     box-sizing: border-box;
     display: flex;
-    text-align: center;
+    text-align: right;
     flex-direction: column;
     /* flex: 1; */
 }
 
 .box-top{
     width: 100%;
-    height: 70vh;
+    height: 95vh;
     /* background-color: #4dbfac; */
-    /* padding-left: 10px; */
-    /* padding-top: 100px; */
     box-sizing: border-box;
-    display: block;
+    display: flex;
+}
+.left-box{
+    width: 10%;
+    height: 95vh;
+    /* background-color: #00b3ff; */
+}
+.center-box{
+    width: 80%;
+    height: 95vh;
+    /* background-color: #401515; */
+}
+.right-box{
+    width: 12.5%;
+    height: 95vh;
+    display: inline-flex;
+    margin-right: -12.5%;;
+    /* background-color: #ff0095; */
 }
 
+.text{
+    width:30%;
+    height: 3vh;
+    position: absolute;
+    display: inline;
+    top: 46%;
+    left: 9%;
+}
+
+.first-txt p{
+    font-family: 'Volkhov', serif;
+}
 .top-txt-box{
     /* width: 41%; */
     width: 100%;
@@ -66,8 +87,9 @@ body {
     /* padding: 5pt 0 0 0pt; */
     /* top: -150%; */
     padding-top: 10px;
+    padding-right: 20px;
     box-sizing: border-box;
-    /* background-color: #FBC848; */
+    /* background-color: #FBC848;  */
 }
 .box-top-text a{
     font-family: 'Paytone One', sans-serif;
@@ -116,29 +138,34 @@ body {
 
 .neon-box{
     width: 100%;
-    height: 50vh;
-    padding: 10px 300px ;
+    height: 75vh;
+    position: relative;
+    top: 100%;
+    padding: 10px 150px;
     box-sizing: border-box;
-    background-color: blue;
+    background-size: contain;
+    /* background-color: blue;  */
 }
 .neon{
-    /* background-color: rgb(78, 16, 69); */
-    width: 30vw; 
-    top:-20%; 
+    position: absolute;
+    top: -50%;
+    width: 50vw;
 }
 
 .neon img{
     width: 100%;
-    height: auto;
+    /* height: auto; */
 }
 
 .box-middel{
     width: 100%;
     height: 15vh;
-    background-color: #2abf5e;
+    /* background-color: #2abf5e; */
+    /* padding: 0 90px 0 480px; */
     position: relative;
-    /* left: 27%; */
-   
+    left: 45%;;
+    box-sizing: border-box;
+    background-size: contain;
 }
 
 .arrow{
@@ -156,8 +183,11 @@ body {
 
 .box-transition{
     width: 100%;
-    height: 5vh;
-    background-color: #4dbfac;
+    height: 10vh;
+    /* background-color: #4dbfac; */
+    position: relative;
+    bottom: -13%;
+    background-size: contain;
 }
 
 .transition-pic{}
@@ -170,8 +200,6 @@ body {
     height: 10vh;
     background-color: #E4D7CA;
 }
-
-
 
 .footer{
     width: 100vw;
@@ -358,20 +386,30 @@ body {
         <div class="container">
 
             <div class="box-top">
-                .
-                <div class="top-txt-box">
-                    <div class="box-top-text">
-                        <a href="guide-page.html">NEWS</a></div>
-                <div class="neon-box">
-                    <div class="neon">
-                        <img src=" image/news-neon.svg"></div>    
-                </div>
+                <div class="left-box"></div>
+                <div class="center-box">
+
+                    <div class="top-txt-box">
+                        <div class="box-top-text">
+                            <a href="guide-page.html">NEWS</a></div>
+                    <div class="neon-box"> 
+                        <div class="neon">
+                            <img src=" image/news-neon.svg"></div>
+                        </div>
+                    </div>
+                <div class="right-box"></div>
+               
                        
             </div>
                
             
+              <div class="text"> 
+                <div class="first-txt">
+                    <p class="date">July. 22.2023</p>
                    
-                <div class="text"> </div>
+                </div>
+              </div>       
+              
             
             </div>
 

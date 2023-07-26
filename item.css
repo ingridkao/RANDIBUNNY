@@ -95,6 +95,7 @@
     height: 65vh;
     /* border: 4px solid greenyellow; */
     display: flex;
+    background-size: contain;
 }
 
 .footer-left{
@@ -193,6 +194,7 @@
     position: absolute;
     bottom: 0;
     background-color: #bf3a2a;
+    background-size: contain;
 }
 
 .bottom-btn{
