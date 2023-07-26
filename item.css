@@ -2,8 +2,8 @@
 .btn{
     display: flex;
     position: fixed;
-    left: 5%;
-    top: 2%;
+    left: 3%;
+    top: 4%;
 }
 .btn-top{
     width: 112px;
