@@ -1,9 +1,9 @@
 <svg width="1932" height="1084" viewBox="0 0 1932 1084" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g clip-path="url(#clip0_485_3335)">
-<mask id="mask0_485_3335" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="1932" height="1084">
+<g clip-path="url(#clip0_534_1384)">
+<mask id="mask0_534_1384" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="1932" height="1084">
 <path d="M1932 0H0V1084H1932V0Z" fill="white"/>
 </mask>
-<g mask="url(#mask0_485_3335)">
+<g mask="url(#mask0_534_1384)">
 <path d="M1932 0H0V1084H1932V0Z" fill="#E5BC64"/>
 <path d="M33 45.3767C36.866 45.3767 40 41.4264 40 36.5535C40 31.6805 36.866 27.7302 33 27.7302C29.134 27.7302 26 31.6805 26 36.5535C26 41.4264 29.134 45.3767 33 45.3767Z" fill="#333534" fill-opacity="0.5"/>
 <path d="M33 94.5349C36.866 94.5349 40 90.5846 40 85.7117C40 80.8387 36.866 76.8884 33 76.8884C29.134 76.8884 26 80.8387 26 85.7117C26 90.5846 29.134 94.5349 33 94.5349Z" fill="#333534" fill-opacity="0.5"/>
@@ -1106,16 +1106,17 @@
 <path d="M1917 1029.8C1920.87 1029.8 1924 1025.85 1924 1020.98C1924 1016.1 1920.87 1012.15 1917 1012.15C1913.13 1012.15 1910 1016.1 1910 1020.98C1910 1025.85 1913.13 1029.8 1917 1029.8Z" fill="#333534" fill-opacity="0.5"/>
 <path d="M1917 1078.96C1920.87 1078.96 1924 1075.01 1924 1070.13C1924 1065.26 1920.87 1061.31 1917 1061.31C1913.13 1061.31 1910 1065.26 1910 1070.13C1910 1075.01 1913.13 1078.96 1917 1078.96Z" fill="#333534" fill-opacity="0.5"/>
 </g>
-<rect x="8" y="762" width="1924" height="374.328" fill="url(#pattern0)" fill-opacity="0.5"/>
+<rect y="710" width="1934" height="374.328" fill="url(#pattern0)" fill-opacity="0.5"/>
+<rect x="0.5" y="0.5" width="1953" height="111" fill="#D9D9D9" stroke="black"/>
+<rect x="-10.5" y="112.5" width="1953" height="45" fill="#6D6B6B" stroke="black"/>
 </g>
-<rect x="970.5" y="311.567" width="8" height="37" rx="4" fill="#B9B2B2" stroke="black"/>
 <defs>
-<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="0.0440748" height="0.226539">
-<use xlink:href="#image0_485_3335" transform="scale(0.0004158 0.00213716)"/>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="0.0438469" height="0.226539">
+<use xlink:href="#image0_534_1384" transform="scale(0.00041365 0.00213716)"/>
 </pattern>
-<clipPath id="clip0_485_3335">
+<clipPath id="clip0_534_1384">
 <rect width="1932" height="1084" fill="white"/>
 </clipPath>
-<image id="image0_485_3335" width="106" height="106" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEgSURBVHgB7duxDYAwEARBQ5nQfx1QgZGI7JVmGvhgpc9ujI3c1/WMhVbf/3IOEoSKECpCqAihIoSKECpCqAihIoSKECpCqAihIoSKECpCqAihIoSKECpCqAihIoSKECpCqAihIoSKECpCqAihIoSKECpCqAihIo6dV3ZsyjR0zuuLECpCqAihIoSKECpCqAihIoSKECpCqAihIoSKECpCqAihIoSKECpCqAihIoSKECpCqAihIoSKECpCqAihIoSKECpCqAihIoSKECpCqAihIqzi+c8qfs7rixAqQqgIoSKEihAqQqgIoSKEihAqQqgIoSKEihAqQqgIoSKEihAqQqgIoSKEihAqQqgIoSKEihAqQqgIoSKEihAqQqgIoSJeepcRPXEy+aoAAAAASUVORK5CYII="/>
+<image id="image0_534_1384" width="106" height="106" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEgSURBVHgB7duxDYAwEARBQ5nQfx1QgZGI7JVmGvhgpc9ujI3c1/WMhVbf/3IOEoSKECpCqAihIoSKECpCqAihIoSKECpCqAihIoSKECpCqAihIoSKECpCqAihIoSKECpCqAihIoSKECpCqAihIoSKECpCqAihIo6dV3ZsyjR0zuuLECpCqAihIoSKECpCqAihIoSKECpCqAihIoSKECpCqAihIoSKECpCqAihIoSKECpCqAihIoSKECpCqAihIoSKECpCqAihIoSKECpCqAihIqzi+c8qfs7rixAqQqgIoSKEihAqQqgIoSKEihAqQqgIoSKEihAqQqgIoSKEihAqQqgIoSKEihAqQqgIoSKEihAqQqgIoSKEihAqQqgIoSJeepcRPXEy+aoAAAAASUVORK5CYII="/>
 </defs>
 </svg>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="item.css">
+    <title>Gallery</title>
+<style  type="text/css">
+ @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-decoration: none; 
+    background-color: #24252a
+}
+.header{width: 100%;} 
+.box{
+    height: 15vh;
+    background-color: #E4D7CA;
+}
+.container{
+    width: 100%;
+    display: flex;
+    min-height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    /* background-color: #5a5a5a; */
+    margin: auto;
+}
+.title{}
+.title img{width: 100%;}
+.left-box{
+    width: 50%;
+}
+.orbit-container {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    height: 1000px;
+    top: 70px;
+    left:50%;
+    overflow: hidden;
+    /* background-color: #756363; */
+}
+
+.orbit {
+  position: absolute;
+  border-radius: 100%;
+  border: solid 3px rgba(137, 196, 244, 0.1);
+  transition: .2s;
+  /* background-color: #e58e26; */
+}
+#jupiter-orbit {
+  /* width: 450px;
+  height: 450px; */
+  /* top: 98px;
+  left: calc(50% - 225px);
+  -webkit-animation: spin-right 60s linear infinite;
+  animation: spin-right 60s linear infinite; */
+  /* width: 800px;
+  height: 500px; */
+  /* border-radius: 500px  300px 0 0 ; */
+  width: 750px;
+  height: 750px;
+  top: 45px;
+  /* transform: rotate(-90deg) translateY(-70px); */
+  left: calc(50% );
+  border:  solid 3px rgba(137, 196, 244, 0.1);
+  -webkit-animation: spin-right 20s linear infinite;
+  animation: spin-right 20s linear infinite;
+  /* background-color: #e58e26; */
+}
+
+#jupiter {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 200px;
+  border-radius: 100%;
+  background: linear-gradient(#f8c291, #e58e26);
+}
+
+/* #saturn-orbit {
+  width: 525px;
+  height: 525px;
+  top: 62px;
+  left: calc(50% - 262.5px);
+  -webkit-animation: spin-right 145s linear infinite;
+  animation: spin-right 145s linear infinite;
+} */
+
+/* #saturn,
+#saturn-rings{
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 145px;
+  left: 15px;
+  border-radius: 100%;
+  background: linear-gradient(#8d6e63, #ffe0b2)
+} */
+
+/* #saturn-rings {
+  height: 30px;
+  left: 15px;
+  top: 138px;
+  background: rgba(255, 236, 179,0.25)
+}
+#uranus-orbit {
+  width: 600px;
+  height: 600px;
+  top: 25px;
+  left: calc(50% - 300px);
+  -webkit-animation: spin-right 420s linear infinite;
+  animation: spin-right 420s linear infinite;
+}
+
+#uranus {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 220px;
+  border-radius: 100%;
+  background: linear-gradient(#81ecec, #00cec9);
+}
+#planet-list {
+  display: flex;
+  list-style: none;
+  font-family: Raleway;
+  color: white;
+  justify-content: center;
+}
+
+#pluto-orbit {
+  width: 750px;
+  height: 750px;
+  top: -45px;
+  left: calc(50% - 375px);
+  border: dashed 1px rgba(137, 196, 244, 0.1);
+  -webkit-animation: spin-right 1240s linear infinite;
+  animation: spin-right 1240s linear infinite;
+}
+#pluto {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  top: 330px;
+  border-radius: 100%;
+  background: linear-gradient(silver, #fafafa);
+} */
+#planet-list li {
+  margin: 10px;
+  cursor: pointer;
+}
+
+#planet-list li a {
+  text-decoration: none;
+  color: white;
+}
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.right-box{
+    width: 50%;
+}
+
+
+</style>
+</head>
+<body>
+    
+<div class="wrap">
+    <div class="header">
+        <div class="box"></div>
+    </div>
+
+    <div class="container">
+        <div class="title"></div>
+
+        <div class="left-box">
+            <ul id="planet-list">
+               
+                <li id="uranus-link">
+                    <a href="#uranus">Uranus</a>
+                    <li id="jupiter-link">
+                        <a href="#jupiter">Jupiter</a>
+                    </li>
+                    <li id="saturn-link">
+                        <a href="#saturn">Saturn</a>
+                    </li>
+                </li>
+            </ul>
+
+
+            <div class="orbit-container">
+                <div id="jupiter-orbit" class="orbit">
+                    <div id="jupiter"></div>
+                </div>
+                <div id="saturn-orbit" class="orbit">
+                    <div id="saturn"></div>
+                    <div id="saturn-rings"></div>
+                </div>
+                <div id="uranus-orbit" class="orbit">
+                    <div id="uranus"></div>
+                </div>
+
+
+
+            </div>
+        
+        
+        
+        </div>
+
+
+
+
+
+        <div class="right-box"></div>
+
+    
+    
+    
+    
+    </div>
+
+
+
+
+
+
+
+</div>
+
+
+</body>
+</html>

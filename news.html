@@ -6,108 +6,75 @@
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="item.css">
     <title>News</title>
-  <style type="text/css">
-@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
 
-html{
-    /* overflow-x: hidden;
-    overflow-y: auto; */
-    background-color: #E4D7CA;
-    
-}
+html{ background-color: #E4D7CA;}
 
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: #3B3A3A;
-}
-
-.header{
-    /* background-color: aqua; */
-    width: 100%;
-    width: 100vw;
-    position: absolute;
-    box-sizing: border-box;
-}
-
-.container{
-    height: 130vh;
-    width: 1200px;
-    inset: 0;
-    margin: auto;
-    background-color: #3B3A3A;
-    box-sizing: border-box;
     display: flex;
-    text-align: right;
     flex-direction: column;
     box-sizing: border-box;
-    /* flex: 1; */
+    text-decoration: none; 
+    background-color: #1c1c1c;
+    -webkit-animation: color-change-2x 2s linear infinite alternate both;
+	        animation: color-change-2x 2s linear infinite alternate both;
 }
+ @-webkit-keyframes color-change-2x {
+  0%{
+    background: #1c1c1c;
+  }
+50%{
+    background: #27183F;
+}
+ 
+  100% {
+    background: #5E1D53;
+  }
+}
+@keyframes color-change-2x {
+    0%{
+    background: #3B3A3A;
+  }
 
-.box-top{
+  100% {
+    background: #27183F;
+  }
+} 
+ul li a { text-decoration: none; }
+a { text-decoration:none;}
+/* .header{
     width: 100%;
-    height: 95vh;
-    /* background-color: #4dbfac; */
-    box-sizing: border-box;
-    display: flex;
-}
-.left-box{
-    width: 10%;
-    height: 95vh;
-    /* background-color: #00b3ff; */
-}
-.center-box{
-    width: 80%;
-    height: 95vh;
-    /* background-color: #401515; */
-}
-.right-box{
-    width: 12.5%;
-    height: 95vh;
-    display: inline-flex;
-    margin-right: -12.5%;;
-    /* background-color: #ff0095; */
-}
-
-.text{
-    width:30%;
-    height: 3vh;
     position: absolute;
-    display: inline;
-    top: 46%;
-    left: 9%;
-    box-sizing: border-box;
+}  */
+.container{
+    min-height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: auto;
+    position: relative;
+    z-index: 1;
 }
 
-.first-txt p{
-    font-family: 'Volkhov', serif;
-}
-.top-txt-box{
-    /* width: 41%; */
+.box-top-text{
     width: 100%;
-    height: 20vh;
-    /* position: relative; */
-    /* padding: 5pt 0 0 0pt; */
-    /* top: -150%; */
-    padding-top: 10px;
-    padding-right: 20px;
-    box-sizing: border-box;
-    box-sizing: border-box;
-    /* background-color: #FBC848;  */
-}
+    /* background-color: black; */
+    padding-top: 60px;
+} 
 .box-top-text a{
     font-family: 'Paytone One', sans-serif;
     /* background-color: #8393e4; */
     text-decoration: none;
-    justify-items: center;
-    left: 41%;
-    position:absolute;
     color: #F2E8D9;
-    font-size: 6vw;
+    font-size: 6em;
     animation: LetterColor 3s linear infinite;
 }
-
-@keyframes LetterColor {
+ @keyframes LetterColor {
     0% {
         color: #fff;
         text-shadow: 
@@ -121,7 +88,6 @@ body {
         0 0 400px #00b3ff;
         filter: blur(2px) hue-rotate(0deg);
     }
-    30%,
     70% {
         color: #fff;
         text-shadow: 
@@ -138,369 +104,396 @@ body {
         text-shadow: none;
         filter: blur(2px) hue-rotate(0deg);
     }
-} 
-
-.neon-box{
-    width: 100%;
-    height: 75vh;
-    position: relative;
-    top: 100%;
-    padding: 10px 150px;
-    box-sizing: border-box;
-    background-size: contain;
-    box-sizing: border-box;
-    /* background-color: blue;  */
 }
+
 .neon{
-    position: absolute;
-    top: -50%;
-    width: 50vw;
+    position: relative;
 }
-
 .neon img{
-    width: 100%;
-    /* height: auto; */
+    width: 65%;
+    vertical-align: bottom;
+    filter: brightness(150%) saturate(250%) hue-rotate(180deg);
+    animation: neonAnimation 1s infinite alternate;
+  
 }
-
 .box-middel{
     width: 100%;
-    height: 15vh;
-    /* background-color: #2abf5e; */
-    /* padding: 0 90px 0 480px; */
-    position: relative;
-    left: 45%;;
-    box-sizing: border-box;
-    background-size: contain;
+    display: block;
+    transform: translateY(-100px); 
+    filter: brightness(150%) saturate(250%) hue-rotate(180deg);
+    animation: neonAnimation2 1s infinite alternate;
 }
-
-.arrow{
-   width: 15vw;
-
-}
-.arrow img{
-    width: 100%;
-    height: auto;
-}
-
 .box-middel img{
-    width: 100%;
+    width: 30%;
+}
+@keyframes neonAnimation {
+  from {
+    filter: brightness(80%) saturate(50%) hue-rotate(180deg);
+  }
+  to {
+    filter: brightness(120%) saturate(150%) hue-rotate(360deg);
+  }
+}
+@keyframes neonAnimation2 {
+  from {
+    filter: brightness(60px) saturate(30%) hue-rotate(9deg);
+  }
+  to {
+    filter: brightness(90%) saturate(100%) hue-rotate(360deg);
+  }
 }
 
-.box-transition{
-    width: 100%;
-    height: 10vh;
-    /* background-color: #4dbfac; */
-    position: relative;
-    bottom: -13%;
-    background-size: contain;
-}
-
-
-.transition-pic img{
-    width: 100%;
-}
-
-.box-bottom{
-    width: 100vw;
-    height: 10vh;
-    background-color: #E4D7CA;
-}
-
-.footer{
-    width: 100vw;
-    background-color: #E4D7CA;
+.text-box{
+    width: 655px;
+    height: 300px;
     position: absolute;
+    transform: translate(300px, 405\px);
+    padding: 0 20px;
+    display: flex;
+    text-decoration: none;
 }
 
-.footer-top{
+.date a{ color: rgb(27,27,27);font-family: 'Volkhov', serif;}
+.content a{ color: rgb(27,27,27);font-family: 'Volkhov', serif;}
+.read-txt{color: rgb(27,27,27); font-family: 'Volkhov', serif;}
+.date, li{
+    margin-bottom: 35px;
+    margin-right: 40px;
+}
+.read-outside{margin-top: -9px;}
+.read-box{
+    width: 100px;
+    height: 25px;
+    border: 1px solid rgb(27,27,27);
+    padding: 2px 0;
+}
+.neon-box{
+    display: block;
     width: 100%;
-    height: 5vh;
-    background-color: #bf3a2a;
-    box-sizing: border-box;
-    padding: 5pt 0 0 0;
-}
-
-.marqueebox-bottom{
-    width: 100vw;
-    /* height: .3vh; */
-    position: absolute;
-    right: 0;
-    overflow: hidden;
-    font-size: 1.5vw; 
-    /* background-color: #bf3a2a; */
-
-}
-
-.bottom-text{
-    font-family:'Showcard Gothic', sans-serif;
-    color: #FBC848;
-    text-align: right;
     position: relative;
-    transform: translateX(50%);
-    animation: runright linear 10s infinite; 
+    transform: translateY(-150px);
+}
+
+.line{
+    display: flex;
+    flex-direction: column;
+    transform: translate(280px, 414px);
+    position: absolute;
+    z-index: 1;
+}
+
+.line-first{
+    width: 640px;
+    height: 1px;
+    border: 1px solid rgb(27,27,27);
+    margin-bottom: 49px;
+}
+
+.line-sec{
+    width: 640px;
+    height: 1px;
+    border: 1px solid rgb(27,27,27);
+    margin-bottom: 51px;
+}
+
+.line-third{
+    width: 640px;
+    height: 1px;
+    border: 1px solid rgb(27,27,27);
+    margin-bottom: 48px;
+}
+
+.line-fourth{
+    width: 640px;
+    height: 1px;
+    border: 1px solid rgb(27,27,27);
+}
+
+.inside-one{ margin-bottom: 27px;}
+.inside-two{ margin-bottom: 27px;}
+.inside-three{ margin-bottom: 26px;}
+.inside-four{ margin-bottom: 20px;}
+
+
+
+.circle-box{ 
+    position: absolute;
+    display: flex;
+    right: 10px;  
+    transform: translateY(60px);
 } 
-
-.footer-main{
-    width: 100%;
-    height: 65vh;
-    /* border: 4px solid greenyellow; */
-    display: flex;
+.left-one{
+    width: 300px;
+    height: 100px;
+    transform: translate(-5px,-120px);
+    border-radius: 50%;
+    background-color: #3B3A3A;
+    -webkit-animation: color-change-2x 2s linear infinite alternate both;
+	        animation: color-change-2x 2s linear infinite alternate both;
 }
-
-.footer-left{
-    width: 50%;
-    height: 65vh;
-    position: absolute;
-    display: block;
-    box-sizing: border-box;
-    padding: 14pt 130pt 180pt;
-    /* background-color: aqua; */
+.left-two{
+    width: 100px;
+    height: 100px;
+    transform: translate(-25px, -120px);
+    border-radius: 55%;
+    background-color: #3B3A3A;
+    -webkit-animation: color-change-2x 2s linear infinite alternate both;
+	        animation: color-change-2x 2s linear infinite alternate both;
 }
-
-.contacts-box{
-    position: absolute;
+.left-three{
+    width: 300px;
+    height: 100px;
+    transform: translate(-25px,-120px);
+    border-radius: 50%;
+    background-color: #3B3A3A;
+    -webkit-animation: color-change-2x 2s linear infinite alternate both;
+	        animation: color-change-2x 2s linear infinite alternate both;
 }
-
-.phone{
-     width: 20vw;
+.left-four{
+    width: 100px;
+    height: 100px;
+    transform: translate(-60px,-140px);
+    border-radius: 60%;
+    background-color: #3B3A3A;
+    -webkit-animation: color-change-2x 2s linear infinite alternate both;
+	        animation: color-change-2x 2s linear infinite alternate both;
 }
-
-.phone img{
-    width: 100%;
-    height: 100%;   
-}
-
-.footer-right{
-    width: 50%;
-    height: 65vh;
-    /* background-color: blueviolet; */
-    position: absolute;
-    right: 0;
-}
-
-.scbcribe-box{
-    width: 35vw;
-    height: 32vh;
-    position: absolute;
-    top: 13%;
-    background-color: #ebebeb;
-}
-
-.top-txt{
-    padding: 35px 0 0 15px;
-}
-
-.top-txt >h2{
-    font-family: 'Paytone One', sans-serif;
-    font-size: 1.5vw;
-    padding: 0 0 10px 0;
-    color:rgb(27, 27, 27);
-}
-
-.top-txt >h3{
-    font-family: 'Battambang', sans-serif;
-    font-size: 1.1vw;
-    color:rgb(27, 27, 27);
-}
-
-.email{
-    padding: 35px 0 5px 15px;
-    font-family: 'Basic', sans-serif;
-    font-size: 7pt;
-    color: #555252;
-    border-bottom: 1px solid rgb(27, 27, 27);
-}
-
-.send-box{
-    width: 7vw;
-    height: 8vh;
-    padding: 15px 0 0 15px;
-    box-sizing: border-box;
-}
-
-.send{
-    width: 5vw;
-    height: 4vh;
-    background-color: #B7B5B5;
-    border-radius: 20px;
-}
-
-.send-txt{
-    font-family: 'Paytone One', sans-serif;
-    font-size: .9vw;
-    color:rgb(27, 27, 27);
-    display: block;
-    padding: 5px 18px 0 ;
-    text-decoration: none;
-}
-
-.footer-bottom{
-    width: 100vw;
-    height: 11vh;
-    position: absolute;
-    bottom: 0;
-    background-color: #bf3a2a;
-}
-
-.bottom-btn{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.bottom-box{
-    padding-top: 20pt;
-}
-
-.txt{
-    font-family: 'Paytone One', sans-serif;
-    font-size: 1.5vw;
-    color: rgb(27, 27, 27);
-    text-decoration: none;
-}
-
-.icon{
-    display: flex;
-}
-
-.icon >a{
-    width: 2vw;
-    margin-left: 30pt;
-    padding-top: 20pt;
-}
-
-.icon >a img{
-    width: 100%;
+.left-five{
+    width: 50px;
+    height: 50px;
+    transform: translate(-50px,-80px);
+    border-radius: 45%;
+    background-color: #3B3A3A;
+    -webkit-animation: color-change-2x 2s linear infinite alternate both;
+	        animation: color-change-2x 2s linear infinite alternate both;
+} 
+ .left-six{
+    width: 640px;
+    height: 40px;
+    transform: translate(-70px,-70px);
+    border-radius: 40%;
+    background-color: #3B3A3A;
+    -webkit-animation: color-change-2x 2s linear infinite alternate both;
+	        animation: color-change-2x 2s linear infinite alternate both;
+} 
+.left-seven{
+    width: 50px;
+    height: 50px;
+    transform: translate(-88px,-80px);
+    border-radius: 45%;
+    background-color: #3B3A3A;
+    -webkit-animation: color-change-2x 2s linear infinite alternate both;
+	        animation: color-change-2x 2s linear infinite alternate both;
+} 
+.left-eight{
+    width: 240px;
+    height: 40px;
+    transform: translate(-90px,-80px);
+    border-radius: 45%;
+    background-color: #3B3A3A;
+    -webkit-animation: color-change-2x 2s linear infinite alternate both;
+	        animation: color-change-2x 2s linear infinite alternate both;
+} 
+.left-nine{
+    width: 50px;
+    height: 50px;
+    border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+    transform: rotate(-45deg);
+    margin-top: -60px;
+    background-color: #3B3A3A;
+    -webkit-animation: color-change-2x 2s linear infinite alternate both;
+	        animation: color-change-2x 2s linear infinite alternate both;
+}   
+.left-ten{
+    width: 150px;
+    height: 80px;
+    transform: translate(-3px,-120px);
+    border-radius: 50%;
+    background-color: #3B3A3A;
+    -webkit-animation: color-change-2x 2s linear infinite alternate both;
+	        animation: color-change-2x 2s linear infinite alternate both;
 }   
 
+.space{
+    width: 100%;
+    padding-bottom: 200px;
+    background-color: #F2E8D9;
+} 
 
-</style>
+.footer {
+  position: relative;
+  z-index: 0;
+}
+
+
+
+    </style>
 </head>
 <body>
-    <div class="wrap">
+    
+<div class="wrap">
 
-        <div class="header">
-            <div class="btn">
-                <div class="btn-top">
-                    <a href="menu.html" class="btn-txt">MENU</a></div>
-                    <div class="btn-back"> </div>
+    <!-- <div class="header">  
+</div> -->
+
+    <div class="container">
+
+        <div class="box-top-text">
+            <a href="guide-page.html">NEWS</a></div>
+
+        <div class="neon-box"> 
+            <div class="line">
+                <div class="line-first"></div>
+                <div class="line-sec"></div>
+                <div class="line-third"></div>
+                <div class="line-fourth"></div>
             </div>
+            <div class="inside"></div>
+            <div class="neon">
+                <img src=" image/news-neon2.svg"></div>
         </div>
 
-        <div class="container">
-
-            <div class="box-top">
-                <div class="left-box"></div>
-                <div class="center-box">
-
-                    <div class="top-txt-box">
-                        <div class="box-top-text">
-                            <a href="guide-page.html">MENU</a></div>
-                    <div class="neon-box"> 
-                        <div class="neon">
-                            <img src=" image/news-neon.svg"></div>
-                        </div>
-                    </div>
-                <div class="right-box"></div>
-               
-                       
+        <div class="text-box">
+            <div class="date">
+                <ul>
+                    <li><a href="#">July.22.2023</a><br></li>
+                    <li><a href="#">June. 10.2023</a><br></li>
+                    <li><a href="#">Feb. 14.2023</a><br></li>
+                    <li><a href="#">Jan. 02.2023</a></li>
+                </ul>
             </div>
-               
-            
-              <div class="text"> 
-                <div class="first-txt">
-                    <p class="date">July. 22.2023</p>
-                   
+
+        <div class="content">
+                <ul>
+                    <li><a href="#">Timetable Of Holiday Selling</a></li>
+                    <li><a href="#">New Products Release</a></li>
+                    <li><a href="#">Limited Edition Tote Bag Release</a></li>
+                    <li><a href="#">Happy New Year Sale</a></li>
+                </ul>
+        </div>
+        
+            <div class="read-outside">
+                <div class="inside-one">
+                <div class="read-box">
+                    <a href="#"><div class="read-txt">READ ❥</div></a>
                 </div>
-              </div>       
-              
-            
             </div>
 
-            <div class="box-middel">
-                <div class="arrow">
-                    <img src=" image/news-arrow.svg"></div>
+            <div class="inside-two">
+                <div class="read-box">
+                    <a href="#"><div class="read-txt">READ ❥</div></a>
+                </div>
+            </div>
+
+            <div class="inside-three">
+                <div class="read-box">
+                    <a href="#"> <div class="read-txt">READ ❥</div></a>
+                </div>
                 
             </div>
-            
-            <div class="box-transition">
-                <div class="transition-pic">
-                    <img src=" image/news-bg.svg"></div>
+
+            <div class="inside-four">
+                <div class="read-box">
+                    <a href="#"><div class="read-txt">READ ❥</div></a>
+                </div>
             </div>
 
-            
-        </div>
-       
-        <div class="box-bottom"></div>
-
-        <div class="footer">
-            <div class="footer-top">
-                <div class="marqueebox-bottom">
-                    <div class="marquee-bottom">
-                      <div class="bottom-text">RANDI BUNNY ❤ RANDI BUNNY ❤RANDI BUNNY ❤RANDI BUNNY ❤ </div>
-                    </div>
-                </div>
+            <div class="more-box">
+                <a href="#"><div class="read-txt">MORE ❥</div></a>
             </div>
-    
-            <div class="footer-main">
-    
-                <div class="footer-left">
-                    <div class="contacts-box">
-                        <div class="phone">
-                            <img src="image/about-phone.svg"></div>
-    
-                    </div>
-                </div>
-    
-                <div class="footer-right">
-    
-                    <div class="scbcribe-box">
-                        <div class="top-txt">
-                        <h2>SCBSCRIBE</h2>
-                        <h3>Don't pass notes — subscribe to our email list.</h3></div>
-                        <p class="email">Email address</p>
-                        <div class="send-box">
-                            <div class="send">
-                                <a class="send-txt" href="#">SEND</a></div>
-                        
-                        </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-    
-                <div class="bottom-btn">
-    
-                    <div class="payment">
-                        <div class="bottom-box">
-                            <a href="#" class="txt">PAYMENT&SHIPPING </a></div>
-                    </div>
-    
-                    <div class="contact">
-                        <div class="bottom-box">
-                            <a href="#" class="txt">CONTACT </a></div>
-                        </div>
-    
-                    <div class="faq">
-                        <div class="bottom-box">
-                            <a href="#" class="txt">FAQ </a></div>
-                    </div>
-                    <div class="icon">
-                        <a class="fb "href="#"><img src="image/facebook icon.svg"></a>
-                        <a class="ig "href="#"><img src="image/instagram icon.svg"></a></div>
-                </div> 
-            </div> 
-    
-            
-        </div>
         </div> 
- 
-
-
     </div>
 
+    <div class="box-middel">
+        <img src=" image/news-arrow.svg"></div>
+           
+        <div class="btn">
+            <div class="btn-top">
+                <a href="menu.html" class="btn-txt">MENU</a></div>
+             <div class="btn-back"> </div>
+    </div>
 
+   
+    </div> 
+ 
 
+<div class="circle-box">
+    <div class="left-one"></div>
+    <div class="left-two"></div>
+    <div class="left-three"></div>
+    <div class="left-four"></div>
+    <div class="left-five"></div>
+    <div class="left-six"></div>
+    <div class="left-seven"></div>
+    <div class="left-eight"></div>
+    <div class="left-nine"></div>
+    <div class="left-ten"></div>
+</div> 
+<div class="space"></div>
+   
+     <div class="footer">
+        <div class="footer-top">
+            <div class="marqueebox-bottom">
+                <div class="marquee-bottom">
+                  <div class="bottom-text">CONTACT US ✉ CONTACT US ✉ CONTACT US ✉ CONTACT US ✉ </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="footer-main">
 
+            <div class="footer-left">
+              <div class="contact-text">STAY<br>TUNED</div>
+                <div class="contacts-box">
+                    <div class="phone">
+                        <img src="image/about-phone.svg" alt="phone"></div>
+
+                </div>
+            </div>
+
+            <div class="footer-right">
+
+                <div class="scbcribe-box">
+                    <div class="top-txt">
+                    <h2>SCBSCRIBE</h2>
+                    <h3>Don't pass notes — subscribe to our email list.</h3></div>
+                    <form>
+                        <input type="text" name=""  size="40" placeholder="Email address" onfocus="this.placeholder=''" onblur="this.placeholder='Email address'"><br>
+                        <input type="submit" value="SEND">
+                    </form>
+                    
+                    </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+
+            <div class="bottom-btn">
+
+                <div class="payment">
+                    <div class="bottom-box">
+                        <a href="#" class="txt">PAYMENT&SHIPPING </a></div>
+                </div>
+
+                <div class="contact">
+                    <div class="bottom-box">
+                        <a href="#" class="txt">CONTACT </a></div>
+                    </div>
+
+                <div class="faq">
+                    <div class="bottom-box">
+                        <a href="#" class="txt">FAQ </a></div>
+                </div>
+                <div class="icon">
+                    <a class="fb "href="#"><img src="image/facebook icon.svg" alt="fb"></a>
+                    <a class="ig "href="#"><img src="image/instagram icon.svg" alt="ig"></a></div>
+            </div> 
+        </div>  
+ 
+</div> 
+<!-- -----------volkhov font------------------ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap" rel="stylesheet">
+    
 </body>
 </html>

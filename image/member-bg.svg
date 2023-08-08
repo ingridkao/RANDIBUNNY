@@ -1106,12 +1106,11 @@
 <path d="M1917 1029.8C1920.87 1029.8 1924 1025.85 1924 1020.98C1924 1016.1 1920.87 1012.15 1917 1012.15C1913.13 1012.15 1910 1016.1 1910 1020.98C1910 1025.85 1913.13 1029.8 1917 1029.8Z" fill="#333534" fill-opacity="0.5"/>
 <path d="M1917 1078.96C1920.87 1078.96 1924 1075.01 1924 1070.13C1924 1065.26 1920.87 1061.31 1917 1061.31C1913.13 1061.31 1910 1065.26 1910 1070.13C1910 1075.01 1913.13 1078.96 1917 1078.96Z" fill="#333534" fill-opacity="0.5"/>
 </g>
-<rect x="8" y="762" width="1924" height="374.328" fill="url(#pattern0)" fill-opacity="0.5"/>
+<rect y="710" width="1934" height="374.328" fill="url(#pattern0)" fill-opacity="0.5"/>
 </g>
-<rect x="970.5" y="311.567" width="8" height="37" rx="4" fill="#B9B2B2" stroke="black"/>
 <defs>
-<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="0.0440748" height="0.226539">
-<use xlink:href="#image0_485_3335" transform="scale(0.0004158 0.00213716)"/>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="0.0438469" height="0.226539">
+<use xlink:href="#image0_485_3335" transform="scale(0.00041365 0.00213716)"/>
 </pattern>
 <clipPath id="clip0_485_3335">
 <rect width="1932" height="1084" fill="white"/>
