@@ -3,32 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>Index</title>
     <link rel="stylesheet" type="text/css" href="reset.css">
     <style type="text/css" >
         @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
  
-    /* body::-webkit-scrollbar {
-    display: none;
-}
-  */
-
-.wrap{
-    width: 100vw;
-    min-height;
+html{height: 100%;}
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    box-sizing: border-box;
+    text-decoration: none; 
+    object-fit:cover ;
+    font-family: 'Paytone One', sans-serif;
     background-color: #E4D7CA; 
-    position: relative;
+    
+}
+.wrap{
+    width: 100%;
+    background-color: #E4D7CA; 
+    margin: auto;
+    /* position: relative; */
    
 } 
+
 .header{
-    position: fixed;
+    width: 100%;
+    height: 5vh;
     top: 0; 
     left: 0;
-    padding: 30px;
-    position: relative
+    background-color: #bf3a2a;
+    position: fixed;
 }
+
 .btn{
     display: flex;
+    box-sizing: border-box;
+    left: 3%;
+    top: 4%;
+    position: fixed;
 }
 .btn-top{
     width: 112px;
@@ -37,18 +53,20 @@
     background-color: #bf3a2a;
     border: 3px solid rgb(27, 27, 27);
     border-radius: 10px;
-    top: 15%;
-    left: 2%;
+    top: 1%;
+    left: 7%;
     position: absolute;
+    z-index: 999;
 }
 
 .btn-back{
     width: 112px;
-    height: 49px;
+    height: 59px;
     background-color: rgb(27, 27, 27);
     border-radius: 10px;
-    left: 10% ;
-    top: 40%;  
+    left: 7% ;
+    top: 2%;  
+    position: absolute
 }
 
 .btn-txt{
@@ -58,73 +76,159 @@
     text-decoration: none;
     inset: 0;
     margin: auto;
-    /* position: absolute;  */
 }
 .btn-top:hover{
-   background-color: #E6BB38;
+    background-color: #E6BB38;
+    margin-top: -2px;
+    margin-left: 10px; 
   
 }
 .btn-txt:hover{
     color: rgb(27, 27, 27);
 }
+
+
 .container{
-    padding: 10vh 10vh 20vh 0 ; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: #E4D7CA; 
+    flex: 1;
+    /* padding-bottom: 10%; */
+
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.title-box{
+    display: block;
+    width: 100%;
+    margin-bottom: 5%;
+    background-color: aquamarine;
+
 }
 .title{
-    width: 30vw;
-    left: 34%;
-    top: 15%;
-    position: absolute;
+    width: 500px;
+    margin: auto;
 }
+
 .title img{
     width: 100%;  
+    vertical-align: bottom;
+}
+
+.foot-box{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: aqua; 
 }
 
 .rightfoot{
-    position: absolute;
-    width: 2vw;
-    left: 65%;
-    top: 14%; 
+    display: block;
+    transform: translate(-200%, 90%);
 }
 
 .rightfoot img{
     width: 100%;
+    vertical-align: bottom;
 }
 
 .leftfoot{
-    position: absolute;
-    width: 2vw;
-    top: 45%;
-    left: 25%;
-}
-.leftfoot img{
-    width: 100%;
+    display: block;
+
 }
 
+.leftfoot img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.plaid-box{
+    display: block;
+    margin-bottom: 3%;
+}
+.plaid{}
+ .plaid img{
+    width: 100%; 
+}   
+
 .footer{
+    width: 100%;
+    bottom: 0;
+    left:0;
+    right:0;
+    transform: scale(1);
+    margin: auto;
     display: flex;
     position: fixed;
+}
+
+.bottom-floor{
+    width: 100%;
+    display: block;
     bottom: 0;
     left: 0;
+    position: relative;
+    /* position: relative; */
+    /* transform: translateY(-20%); */
+}
+.floor img{
+    width: 100%; 
+}
+
+.bottom{
+    width: 100%;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: -90%;
+    left: 35%
+    /* transform: translate(38%, -70%); */
     
 }
 
-.bottom-tv{
-    right: 55%;
-}
-
 .tv{
-    width: 30vw;
-    top: -30%;
-    left: 32%;
-    position: absolute;
+    width: 500px;
+    transform-origin: center bottom; /* 缩放基点在底部中心 */
+    transition: transform 0.3s ease;
+    
 } 
 
  .tv img{
     width: 100%;
-    height: 100%;
-}   
+    vertical-align: bottom;
+}  
+.rabbit-box{
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: -90%;
+    left: 42%;
+    /* transform: translate(45%, -50%); */
+} 
 
+.rabbit{
+    width: 300px;
+    transform-origin: center bottom; 
+    transition: transform 0.3s ease;
+}
+.rabbit img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.dialog-box{
+    width: 100%;
+    display: block;
+    position: absolute;
+    */
+}
 .dialog{
     /* position: relative; */
     width: 20vh; 
@@ -135,6 +239,7 @@
     width: 100%;
     height: 100%;
 } 
+
 .dialog-txt{
     position: absolute;
     top: -2%;
@@ -149,19 +254,7 @@
 }
 
 
-.bottom-floor{
-    display: block;
-    bottom: 0;
-    left: 0;
-}
 
- .plaid img{
-    width: 100vw; 
-}   
-
-.floor img{
-    width: 100vw; 
-}
 
 
 </style>
@@ -180,33 +273,55 @@
                 <div class="btn-back"> </div>
         </div>
     </div>
- <!-- ----------------------------------------------------------------   -->
+ 
     <div class="container">
-        <div class="title">
-            <img src="image/title.svg" alt="title"></div>
-        <div class="rightfoot">
-            <img src="image/right foot.svg" alt="rightfoot"></div>
-        <div class="leftfoot">
-            <img src="image/left foot.svg" alt="leftfoot"></div> 
+
+        <div class="title-box">
+            <div class="title">
+                <img src="image/title.svg" alt="title"></div>
+        </div>
+        
+     
+        <div class="foot-box">
+            <div class="rightfoot">
+                <img src="image/right foot.svg" alt="rightfoot"></div>
+            <div class="leftfoot">
+                <img src="image/left foot.svg" alt="leftfoot"></div> 
+        </div>
+
+
+        <div class="plaid-box">
+            <div class="plaid">
+                <img src="image/plaid.svg" alt="plaid"></div>  
+        </div>
+        
     </div>
  <!-- ----------------------------------------------------------------   -->
-    <div class="footer">
+     <div class="footer">
         
         <div class="bottom-floor">
-                <div class="plaid">
-                    <img src="image/plaid.svg"></div>  
                 <div class="floor">
-                <img src="image/floor.svg"> </div> 
+                    <img src="image/floor.svg" alt="floor"> </div> 
             </div>
-            <div class="bottom-tv">
+
+            <div class="bottom">
                 <div class="tv">
-                    <img src="image/tv2.svg"> </div>
-        </div>
-        <div class="dialog">
-            <!-- <img src="image/dialogbox.svg"></div> -->
-            <div class= "dialog-txt">
-                <a  href="transition1.html">ENTER</a></div>
+                    <img src="image/tv.svg" alt="tv"> </div>      
             </div>
+
+            <div class="rabbit-box">
+                <div class="rabbit">
+                    <img src="image/rabbit.svg" alt="ren"></div>
+            </div>
+ 
+
+        <div class="dialog-box">
+            <div class="pic">
+                <img src="image/dialogbox.svg" alt="pic">
+                <div class= "dialog-txt"><a href="transition1.html">ENTER</a></div>
+            </div>
+          
+        </div> 
           
 
 </div>
