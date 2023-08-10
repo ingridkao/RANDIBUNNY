@@ -90,7 +90,6 @@
     position: relative; 
     animation: runright linear 40s infinite; 
     font-size: .8em;
-
 }  
 
 @keyframes runright {
@@ -270,8 +269,6 @@
     color: #c6766d;
     background-color: #f5e2b1;
     border-radius: 20px;
- 
- 
 }
 .footer-bottom{
     width: 100%;

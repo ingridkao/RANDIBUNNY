@@ -18,14 +18,14 @@ body{
     flex-direction: column;
     box-sizing: border-box;
     font-family: 'Luckiest Guy', cursive;
-    background-color: #E5BC64;
+    background-color: #E4D7CA;
     position: relative;
 }
 .wrap{
     display: flex;
+    justify-content: center;
     width: 100%;
-    flex: 1;
-    
+    flex: 1;    
 }
 .left-box{
     width: 20%;
@@ -87,13 +87,14 @@ body{
   max-width: 1200px;
     width: 60%;
     min-height: 100%;
-    padding-bottom: 100px;  
+    padding-bottom: 400px;  
     background-color:#E5BC64; 
     position: relative;
 }
 .container{
   display: flex;
   justify-content: center;
+
 }
 .sticker{
   position: absolute;
@@ -418,6 +419,24 @@ body{
   right: 0;
 }
 
+.title{
+  display: flex;
+  position: absolute;
+  top:40%;
+}
+.title-box{
+
+  width: 400px;
+  height: 200px;
+  border-radius: 50%;
+  /* background-color: #3023a7; */
+}
+.title-text{
+  position: absolute;
+  font-size: 5em;
+  left: 110%;
+  top: 50%;
+}
 
 
 </style>
@@ -441,14 +460,14 @@ body{
         <div class="inside">
              <div class="marquee">
               <div class="marquee--group">
-                <img src="image/ren-bunny-text.png" alt="ren">
-                <img src="image/ren-bunny-text.png" alt="ren">
-                <img src="image/ren-bunny-text.png" alt="ren">
+                <img src="image/member-text.png" alt="text">
+                <img src="image/member-text.png" alt="text">
+                <img src="image/member-text.png" alt="text">
               </div>
              <div aria-hidden="true" class="marquee--group">
-              <img src="image/ren-bunny-text.png" alt="ren">
-              <img src="image/ren-bunny-text.png" alt="ren">
-              <img src="image/ren-bunny-text.png" alt="ren">
+              <img src="image/member-text.png" alt="text">
+              <img src="image/member-text.png" alt="text">
+              <img src="image/member-text.png" alt="text">
             </div> 
           </div>
         </div> 
@@ -479,7 +498,10 @@ body{
                 <img class="sticker"" src="image/sticker.svg" alt="sticker"></a></div></div>
           </div>
 
-        
+
+
+
+
       <div class="popup-icon">
         <div class="burger-box">
           <img src="image/burger-box.svg" alt="burger-box">
@@ -492,7 +514,8 @@ body{
           <button class="next-btn">&#10095;</button>
         </div>
 
-
+        
+        
 
 
                <div id="myModal">
@@ -531,9 +554,13 @@ body{
                     <div class="profile">
                       <a href="#"><img src="image/member-di-profile.svg" alt="di-profile"></a></div>
                 </div>
-                </div>     
+                </div>   
+                
+                   
+              
+              
          </div> 
-
+        
         </div>
 
     <div class="right-box">
@@ -541,13 +568,13 @@ body{
           <div class="marquee">
             <div class="marquee--group">
               <img src="image/di-bunny-text.png" alt="di">
-              <img src="image/di-bunny-text.png" alt="di">
+              <img src="image/ren-bunny-text.png" alt="ren">
               <img src="image/di-bunny-text.png" alt="di">
             </div>
           `<div aria-hidden="true" class="marquee--group">
+            <img src="image/ren-bunny-text.png" alt="ren">
             <img src="image/di-bunny-text.png" alt="di">
-            <img src="image/di-bunny-text.png" alt="di">
-            <img src="image/di-bunny-text.png" alt="di">
+            <img src="image/ren-bunny-text.png" alt="ren">
           </div>
         </div>
       </div>
@@ -558,6 +585,11 @@ body{
         </div>
           
       </div>
+ 
+      
+   
+
+
 
         <div class="footer">
         <div class="footer-top">
@@ -615,7 +647,7 @@ body{
                     <a class="fb "href="about.html"><img src="image/facebook icon.svg" alt="fb"></a>
                     <a class="ig "href="about.html"><img src="image/instagram icon.svg" alt="ig"></a></div>
             </div> 
-        </div>  
+        </div>   
  
 
 

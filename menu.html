@@ -12,9 +12,6 @@ body::-webkit-scrollbar {
     display: none;
 } 
 
-*{
-    box-sizing: border-box;
-}
 html{
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
@@ -23,36 +20,32 @@ html{
 .body{
     width: 100%;
     min-height: 100vh;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    background-image: url("image/bgp-noise.svg");
-    background-repeat: repeat;
-    background-size: 100%;
-    /* background-color: burlywood; */
+    object-fit: cover;
 }
 
-.top-pic{
-    position: relative;
-    /* position: fixed; */
-    position: absolute;
+.top-plaid{
+    width: 100%;
+    display: flex;
+    position: fixed;
     top:0;
     left:0;
-    z-index: -1;
 }
-.top-pic img{
-    width: 100%;
-}
+
+.top-pic img{ width: 100%;}
+
+.top-pic-sec img{width: 100%;}
+
 .header .header-box{
     width: 100%;
     height: 100%;
-    /* max-width: 1200px; */
-    /* height: 150px; */
     display: flex;
     justify-content: center;
     margin: auto;
     padding: 0 50px;
     position: relative;
-
 }
 
 .btn{
@@ -68,8 +61,8 @@ html{
     border: 2px solid #ebebeb;
     border-radius: 10px;
     top: 40%;
-    left: 4%;
-    z-index: 998;
+    left: 3%;
+    z-index: 1;
 }
 
 .btn-back{
@@ -114,28 +107,27 @@ html{
 }
 .header nav{
     text-align: right;
-    flex-direction: column;
-    align-items: end;
     width: 100%;
-    background-size: contain;
-    transform: translateY(70%);
+    transform: translate(-8%, 70%);
 }
 
 .log-in{
+    width: 35px;
+    margin-right: 3%;
     display: inline-block;
 }
 
 .log-in img{
-    width: 90%;
+    width: 100%;
     vertical-align: bottom;
 }
 
 .cart{
+    width: 35px;
     display: inline-block;
-    padding: 0 0 0 70px;
 }
 .cart img{
-    width: 90%;
+    width: 100%;
     vertical-align: bottom;
 }
 
@@ -145,39 +137,36 @@ html{
     width: 100%;
     display: flex;
     margin: auto;
-    /* padding: 80px 180px 40px 90px; */
     position: relative;
     padding-top: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 200px;
     background-size: contain;
     flex: 1;
 }
+
 .sticker{
     position: absolute;
     z-index: 999;
     left: 35%;
     top: 13%;
 }
+
 .sticker img{
     width: 100%;
     vertical-align: middle;
 }
+
 .axis{
     left: 38%;
     position: relative;
 }
-
 
 .all-button{
     display: flex;
     flex-direction: column;
     margin: auto;
     margin-top: 10px;
-    /* padding: 10px 0 85px  ; */
-    /* justify-content: space-around; */
     position: relative;
-    /* left: 40%;
-    right: 50%; */
     box-sizing: border-box 
 } 
 
@@ -191,6 +180,7 @@ html{
     padding: 0 0 10px 0;
     left: 6%;
 } 
+
 .button-back{
     display: flex;
     width: 230px;
@@ -200,6 +190,7 @@ html{
     padding: 10px 0 10px 0;
 
 } 
+
 .button-txt{
     font-family: 'Paytone One', sans-serif;
     color:  #ebebeb;
@@ -208,7 +199,7 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10px;
+    padding: 15px 10px;
     text-align: center;
 
  } 
@@ -227,14 +218,13 @@ html{
 .footer{
     background-color: #bf3a2a;
     width: 100%;
-    height: 170px;
     bottom: 0;
     left: 0;
-    padding: 20px 80px 100px 20px;
+    padding: 20px 80px 50px 20px;
     display: flex;
     justify-content: center;
     background-size: contain;
-    position: relative; 
+    position: fixed; 
 }
 .footer-box{
     max-width: 1200px;
@@ -244,7 +234,6 @@ html{
 }
 .bottom-box{
     width: 150px;
-    height: 50px; 
     background-color: rgb(27, 27, 27);
     border-radius: 10px;
     padding: 15px 0;
@@ -260,8 +249,9 @@ html{
     justify-content: center;
     padding: 2px;
     text-align: center;
-    box-sizing: border-box 
+    box-sizing: border-box;
 }
+.finder{margin-right: 40px;}
 .login{margin-right: 40px;}
 .contact{margin-right: 40px;}
 .faq{margin-right: 40px;}
@@ -272,29 +262,41 @@ html{
 .txt:hover{
     color:rgb(27, 27, 27);
 }
+
 .bottom-icon{
     display: block;
     transform: translateY(15%);
 } 
+
 .facebook{
+    width: 35px;
     margin-right: 40px;
 }
+
 .facebook img{
     width: 100%;
     vertical-align: bottom;
 }
+
+.instagram{
+    width: 35px;
+}
+
 .instagram img{
     width: 100%;
     vertical-align: bottom;
 }
+
 .fixed-bottom {
     width: 100%;
-    position: absolute;
     bottom: 0;
+    left: 0;
+    display: flex;
+    position: fixed;
 }
-.fixed-bottom {
-    width: 100%;
-}
+
+.bottom-pic img{width: 100%;}
+.bottom-pic-sec img{width: 100%;}
 
 </style>
 </head>
@@ -307,12 +309,14 @@ html{
 
     <div class="wrap">
         
-   
-
+        <div class="top-plaid">
+            <img class="top-pic" src="image/plaid-two.svg" alt="plaid" >
+            <img class="top-pic-sec"src="image/plaid-two.svg" alt="plaid" ></div>
+        
     <div class="header">
        
       <div class="header-box">
-        <img class=top-pic src="image/格紋.svg" >
+     
         <div class="btn">
             <div class="btn-back"></div>
             <div class="btn-top">
@@ -328,9 +332,9 @@ html{
     <nav> 
        <div class="top-icon">
             <div class="log-in">
-                <a href="#" ><img src="image/log-in.svg" alt="登入"></a></div>
+                <a href="menu.html" ><img src="image/log-in.svg" alt="登入"></a></div>
              <div class="cart">
-                <a href="#" ><img src="image/cart.svg" alt="購物車"></a></div>
+                <a href="menu.html" ><img src="image/cart.svg" alt="購物車"></a></div>
         </div>
     </nav>  
     </div>
@@ -380,36 +384,42 @@ html{
 
         <div class="bottom-btn">
 
+       <div class="finder">
+            <div class="bottom-box"> 
+                <a href="menu.html" class="txt">FINDER </a></div>
+        </div>
+        
+
         <div class="login">
         <div class="bottom-box"> 
-            <a href="#" class="txt">LOG-IN </a></div>
+            <a href="menu.html" class="txt">LOG-IN </a></div>
         </div>
 
         <div class="contact">
         <div class="bottom-box">
-            <a href="#" class="txt">CONTACT </a></div>
+            <a href="menu.html" class="txt">CONTACT </a></div>
         </div>
         
         <div class="faq">
         <div class="bottom-box">
-            <a href="#" class="txt">FAQ </a></div>
+            <a href="menu.html" class="txt">FAQ </a></div>
         </div>
     
         <div class="bottom-icon">
-            <a href="#"><img class="facebook" src="image/facebook icon.svg" ></a> 
-            <a href="#"><img class="instagram" src="image/instagram icon.svg" ></a>
+            <a href="menu.html"><img class="facebook" src="image/facebook_black.png" ></a> 
+            <a href="menu.html"><img class="instagram" src="image/instagram_black.png" ></a>
         </div>   
     </div>
    
     </div> 
-    <div class="fixed-bottom">
-        <img src="image/格紋.svg" > 
-    </div>
+
 
     
 </div> 
 
-
+<div class="fixed-bottom">
+    <img class="bottom-pic" src="image/plaid-two.svg" alt="plaid" >
+    <img class="bottom--pic-sec"src="image/plaid-two.svg" alt="plaid" ></div>
 
 
 

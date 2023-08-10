@@ -11,25 +11,28 @@
  
 
  html{
-    background-color: #1b8844;
+   
     line-height: 1.5;
 }
 body {
     width: 100%;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #c1921c;
+    font-family: 'Paytone One', sans-serif;
 }
 a{
     text-decoration: none;
     box-sizing: border-box;
 }
-/* ---------------------------------------------------- */
+
 .wrap{
-    padding-top: 3%;
-    display: block;
+    padding-top: 2%;
 }
-/* -------------------------logo區------------------------- */
+
 .top{
-    max-width: 1400px;
+    /* max-width: 1400px; */
     width: 100%;
     height: 120px;
     margin: auto;
@@ -40,38 +43,45 @@ a{
     justify-content: center;
     border-radius: 50px 50px 0 0  ;   
 }
+
 .mark{
     width: 500px;
     height: 100px;
     margin-top: 10px;
 }
+
 .pic{
     display: flex;
     justify-content: center;
-    transform: translateY(10px);
+    transform: translateY(30%);
 }
+
 .pic img{
     width: 10%;
     vertical-align: middle;
 }
+
 .rabbit-first{
     animation-delay: 30s;
     animation: twinkle 1s infinite alternate;
 }
+
 .rabbit-sec{
     animation-delay: 40s;
     animation: twinkle 1.2s infinite alternate;
 }
+
 .rabbit-third{
     animation-delay: 20s;
     animation: twinkle 1.5s infinite alternate;
     
 }
+
 .rabbit-fourth{
     animation-delay: 20s;
-    animation: twinkle 1.8s infinite alternate;
-   
+    animation: twinkle 1.8s infinite alternate; 
 }
+
 .mark-text{
     font-family: 'Shrikhand', cursive;
     font-weight: bold;
@@ -82,9 +92,8 @@ a{
     transform: translateY(5px);
     color: #bf3a2a;
 }
-/* ---------------------左邊區------------------------------- */
+
 .bottom{
-    max-width: 1400px;
     width: 100%;
     background-color: #bf3a2a;
     margin: auto;
@@ -92,16 +101,16 @@ a{
 }
 
 .left{
-    width: 980px;
-    height: 100%;
-    border: 2px solid rgb(27,27,27);
+    width: 80%;
+    border-left: 2px solid rgb(27,27,27);
     background-color: #e1dcce;
     padding-top: 3%;
     box-sizing: border-box;
 } 
+
 .left-box{
-    width: 920px;
-    height: 80%;
+    /* max-width: 1200px; */
+    width: 95%;
     margin: auto;
     border: 3px solid rgb(27,27,27);
     border-radius: 20px;
@@ -109,41 +118,38 @@ a{
     box-sizing: border-box;
     background-color: #bf3a2a;
 }
-/* -----------------------上方區---------------------------- */
+
 .top-box{
-    width: 880px;
-    height: 200px;
+    width: 100%;
     display: flex;
-    padding-top: 16px;
     box-sizing: border-box;
+    margin-top: -1%;
     justify-content: space-around;
-    /* background-color: aliceblue; */
 }
+
 .top-box img{
     width: 150%;
     vertical-align: middle;
     object-fit: cover;
+    transform: translateY(-5%);
 }
 
-
 .label{
-    width: 130px;
-    height: 50px;
+    width: 120px;
+    height: 40px;
     border-radius: 50%;
-    transform: translateY(35px);
+    transform: translateY(150%);
     border: 2px solid rgb(27,27,27);
     padding: 6px;
     margin-left: 50px;
     box-sizing: border-box;
 }
 
-
 .about>.label {background-color: #FFDA08;}
 .about-txt { 
     color: #FF3204;
-    font-family: 'Paytone One', sans-serif; 
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 1.3;
     text-align: center;   
     text-decoration: none;
@@ -166,8 +172,8 @@ a{
     color: #B50619;
     font-family: 'Paytone One', sans-serif; 
     font-weight: bold;
-    font-size: 1.3em;
-    line-height: 1.5;
+    font-size: 1.2em;
+    line-height: 1.1;
     text-align: center;   
     text-decoration: none;
     animation: twinkle 0.5s infinite alternate
@@ -175,15 +181,13 @@ a{
 .member>.label{background-color: #E82826;}
 .member-txt{
     color: #ebebeb;
-    font-family: 'Paytone One', sans-serif; 
     font-weight: bold;
-    font-size: 1.3em;
-    line-height: 1.5;
+    font-size: 1.2em;
     text-align: center;   
     text-decoration: none;
     animation: twinkle 0.5s infinite alternate
 }
-/* ----------------上方hover區------------------------------------ */
+
 .about-txt:hover{
     color: #FFDA08;
     /* -webkit-text-stroke: .5px black; */
@@ -329,61 +333,72 @@ a{
     z-index: -1;
     transition: opacity 100ms linear;
 }
-/* ------------------中間支撐版--------------------------- */
+
 .middle-box{
-    width: 880px;
-    height: 100px;
+    width: 100%;
+    height: 80px;
     border: 2px solid rgb(27,27,27);
     display: block;
     margin: auto;
     background-color: #e1dcce;
 }
-/* --------------------下層區-------------------------------------- */
+
 .bottom-box{
-    width: 880px;
-    height: 180px;
+    width: 100%;
     display: flex;
     padding-top: 0;
     justify-content: space-around;
     background-color: #bf3a2a;
 }
+
 .bottom-box img{
     width: 110%;
     vertical-align: middle;
     object-fit: cover;
+    transform: translateY(-6%);
 }
+
+.gallery >.pic{
+    transform: translateY(48%);
+}
+
 .gallery >.label{
     background-color: #0B843B;
     margin-right: 25px;
+    transform: translateY(220%);
 }
+
 .gallery-txt{
     color: #ebebeb;
-    font-family: 'Paytone One', sans-serif; 
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 1.3;
     text-align: center;   
     text-decoration: none;
     animation: twinkle 0.5s infinite alternate
 }
+
 .product{
-    transform: translateY(-28px);
+    transform: translateY(-2%);
 }
+
 .product >.label{
     background-color: #306091;
     margin-right: 40px;
+    transform: translateY(160%);
 }
+
 .product-txt{
     color: #ebebeb;
-    font-family: 'Paytone One', sans-serif; 
+ 
     font-weight: bold;
-    font-size: 1.3em;
-    line-height: 1.3;
+    font-size: 1.2em;
+    line-height: 1;
     text-align: center;   
     text-decoration: none;
     animation: twinkle 0.5s infinite alternate
 }
-/* ---------------下層hover區------------------------------------- */
+
 .gallery-txt:hover{color: #0B843B;}
 .product-txt:hover{color: #306091;}
 .gallery>.label:hover{
@@ -405,50 +420,100 @@ a{
 	        animation: jello-vertical 0.9s both;
 }
 
-/* --------------------底層支撐版-------------------------------- */
 .under-box{
-    width: 880px;
-    height: 100px;
+    width: 100%;
+    height: 80px;
     border: 2px solid rgb(27,27,27);
     display: block;
     margin: auto;
     background-color: #e1dcce;
-}
-/* ---------------右方區------------------------------------- */
-.right{
-    width: 435px;
-    height: 100%;
-    border: 2px solid rgb(27,27,27);
-    background-color: #e1dcce;
-}
-.neon{
-    width: 250px;
-    height: 200px;
-    margin: auto;
-    margin-bottom: 100px;
-    display: block;
-    transform: translateY(80px);
-    border: 2px solid rgb(27,27,27);
-    /* background-color: rgb(228, 116, 116); */
-    position: relative;
-}
-.neon-bottom{
-    width: 250px;
-    height: 100px;
-    position: absolute;
-    bottom: 0px;
-    box-sizing: border-box;
-    background-color: rgb(27,27,27);
 }
 
-.neon-txt{
-    font-family: 'Paytone One', sans-serif; 
-    color: rgb(209, 209, 209);
-    font-size: 3em;
-    padding: 30px 50px;
-    box-sizing: border-box;
+.right{
+    width: 20%;
+    display: flex;
+    position: relative;
+    border-right: 2px solid rgb(27, 27,27);
+    background-color: #e1dcce;
+}
+
+.cash-box{
+    width: 100%;
+    margin-top: 15%;
+}
+
+.cash-top{
+    width: 95%;
+    height: 610px;
+    position: relative;
+    border-radius: 30px;
+    background-color: #bf3a2a;
+    box-shadow: -20px 10px 0 #8b100f;
+    border: 2px solid rgb(27,27,27);
+}
+
+.coin-box{
+    margin-top: 15%;
+    position: absolute;
+}
+
+.coin{
+    width: 80%;
+    height: 200px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    background-color: #797979;
+    border: 2px solid rgb(27,27,27);
+}
+.coin-top{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-coin{
+    width: 40%;
+    height: 15px;
+    border-radius: 5px;
+    background-color: #606060;
+    border: 2px solid rgb(27,27,27);
+}
+
+.right-coin{
+    width: 40%;
+    height: 20px;
+    border-radius: 5px;
+    /* margin-left: 15%; */
+    background-color: #606060;
+    border: 2px solid rgb(27,27,27);
+}
+
+.coin-bottom{
+    height: 70%;
+    display: flex;
+}
+
+.price-box{
+    width: 65%;
+    height: 120px;
+    display: block;
+    border-radius: 5px;
+    position: absolute;
+    background-color: #343434;
+    border: 2px solid rgb(27,27,27);
+}
+.coin-text{
+    color: #e1dcce;
+    font-size: 2.8em;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: auto;
+    z-index: 999;
     animation: neon-txt 1.5s ease-in-out infinite alternate;
 }
+
 @keyframes neon-txt {
   0%,
   100% {
@@ -459,69 +524,21 @@ a{
     color: lightblue;
   }
 }
-.marquee{
-    width: 100%;
-    height: 50%;
-    background-color: #E82826;
-    padding: 20px 0;
-    position: absolute;
-    right:0;
-    top:0;
-    overflow: hidden;
-    box-sizing: border-box;
-}
-.text{
-    font-family: 'Paytone One', sans-serif; 
-    font-size: 1em;
-    position: relative;
-    transform: translateX(-40%);
-    animation: runleft linear 6s infinite; 
-}
-.text2{
-    font-family: 'Paytone One', sans-serif; 
-    font-size: 1em;
-    text-align: right;
-    position: relative;
-    transform: translateX(50%);
-    animation: runright linear 6s infinite; 
+
+.ticket-box{
+   margin-top: 20%;
+   box-sizing: border-box;
+   position: absolute;
+   padding: 15px;
+   box-sizing: border-box;
 }
 
-    @keyframes runleft {
-      0%{
-        transform:translateX(-40%);
-      }
-      100%{
-        transform:translateX(105%);
-      }
-    }
+.inside-box img{
+    max-width: 240px;
+    max-height: 400px;
+    transform: translateX(10%);
+}
 
-    @keyframes runright {
-      0%{
-        transform:translateX(50%);
-      }
-      100%{
-        transform:translateX(-100%);
-      }
-    }
-.cash-only{
-    font-family: 'Paytone One', sans-serif; 
-    font-size: 2.2em;
-    color: rgb(27,27,27);
-    display: block;
-    transform: translate(40px,-70px);
- 
-    
-}
-.cash{
-    width: 280px;
-    height: 80px;
-    display: block;
-    margin: auto;
-    transform: translate(-20px,350px);
-    background-color: rgb(27,27,27);
-    border: 10px solid #ebebeb;
-    
-}
 
 </style>
 </head>
@@ -587,7 +604,7 @@ a{
                 </div>
             </div>
 <!-- ---------------------------------------------------------------------- -->
-            <div class="under-box"></div>
+             <div class="under-box"></div>
         </div>
         
     </div>
@@ -595,26 +612,32 @@ a{
             
 <!-- ---------------------------------------------------------------------- -->
         <div class="right">
-        <div class="neon">
-            
-            <div class="neon-box">
-                <div class="marquee">
-                    <div class="text">WELCOME TO RENDI BUNNY</div><br>
-                    <div class="text2">WELCOME TO RENDI BUNNY</div>
-                </div>
- <!-- ---------------------------------------------------------------------- -->   
-            <div class="neon-bottom">
-                <div class="neon-txt">HELLO</div>
+
+            <div class="cash-box">
+                <div class="cash-top"></div>
             </div>
-              </div>
-       
-   <!-- ---------------------------------------------------------------------- -->     
-        <div class="cash">
-            <div class="cash-only">CASH-ONLY</div>
-        </div>
-    </div>
-    
-            
+
+                <div class="coin-box">
+                    <div class="coin">
+                        <div class="coin-top">
+                            <div class="left-coin"></div>
+                            <div class="right-coin"></div>
+                        </div>
+                        <div class="coin-bottom">
+                            <div class="price-box"></div>
+                            <div class="coin-text">CASH ONLY</div>
+                        </div>
+                   </div>
+                  
+                <div class="ticket-box">
+                    <div class="inside-box">
+                        <img src="image/ticket.gif" alt="gif">
+                    </div>
+                </div>
+                </div>
+
+   
+        </div>           
         </div>
    
    
