@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="item.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/item.css">
     <title>Product</title>
     <style type="text/css">
         @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
@@ -314,9 +314,70 @@
         line-height: 112%;  
     }
     .footer {
-    position: relative;
-    z-index: 0;
+        position: relative;
+        z-index: 0;
     }
+    .option-two{display: none;}
+
+     /**平板**/	
+ @media(min-width: 768px) and (max-width: 1023px) {}
+/**手機**/	
+@media (max-width: 767px){
+    .element-to-hide{display: none;}
+
+    .btn {display: none;}
+    .wrap{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap ;
+        width: 100%;
+     }
+     .header{
+        width: 98%;
+     }
+    /* .option{display: none;} */
+    .option{
+        width: 98%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:start;
+        padding: 10% 0 0 1% ;
+        /* transform: translateX(-3%); */
+    }
+    .opt-txt{
+        border: 2px solid #ebebeb;
+        border-radius: 20px;
+        color:#ebebeb;
+        font-size: .8em;     
+    }
+    .stickers, .postcard, .t-shirt{
+        margin-right: 2%;
+    }
+    .others{
+        margin-top: 8%;
+        margin-left: 10%;
+    }
+    .cart{
+        margin-top: 8%;
+        margin-left: 10%;
+    }
+    .cart-txt{
+        font-size: 1em;  
+    }
+
+    .top-box{
+        width: 50%;
+    }
+    .logo{
+        width: 20%;
+    }
+    .plaid{
+        width: 50%;
+    }
+
+
+}
+
 
 
 
@@ -352,7 +413,29 @@
                 
                 </div>
             </div>
-            <!-- ----------------------------------------------------------- -->
+
+            
+            <!-- <div class="option-two">
+                <div class="stickers-two">
+                    <a class="opt-txt" href="stickers.html">STICKERS</a>
+                </div>
+                <div class="postcard">
+                    <a class="opt-txt" href="postcard.html">POSTCARD</a>
+                </div>
+                <div class="t-shirt">
+                    <a class="opt-txt" href="t-shirt.html">T-SHIRT</a>
+                </div>
+                
+                <div class="others">
+                    <a class="opt-txt" href="others.html">OTHERS</a>
+                </div>
+                <div class="cart">
+                    <a class="cart-txt" href="#" >CART</a>
+                </div>
+                
+                </div>
+            </div> -->
+          
 
             <div class="container">
 
@@ -457,15 +540,21 @@
      
 
             
-      <!-- ----------------------------------------------------------- -->
+      
     
       <div class="footer">
         <div class="footer-top">
-            <div class="marqueebox-bottom">
-                <div class="marquee-bottom">
-                  <div class="bottom-text">CONTACT US ✉ CONTACT US ✉ CONTACT US ✉ CONTACT US ✉ </div>
-                </div>
-            </div>
+            <section>
+                <div class="scroll">
+                 <div class="text">
+                    CONTACT US ✉ CONTACT US ✉ CONTACT US ✉ CONTACT US ✉
+                 </div>
+                 <div class="text">
+                    CONTACT US ✉ CONTACT US ✉ CONTACT US ✉ CONTACT US ✉
+                 </div>
+               </div>
+               
+             </section>
         </div>
 
         <div class="footer-main">
@@ -529,4 +618,15 @@
 
 
 </body>
+<!-- Holtwood One SC -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Ultra&display=swap" rel="stylesheet">
+
+<!-- -----------Open Sans------------------ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+<script src="./js/jquery-3.7.0.js"></script>
 </html>
