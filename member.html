@@ -439,6 +439,39 @@ body{
 }
 
 
+ /**平板**/	
+ @media(min-width: 768px) and (max-width: 1023px) {}
+
+  /**手機**/	
+ @media (max-width: 767px){
+
+  .element-to-hide{display: none;}
+
+  .btn {display: none;}
+
+   .wrap{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap ;
+        width: 100%;
+      
+     }
+
+      img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .left-box{
+     display: none;
+    }
+    .right-box{display: none;}
+
+    .center-box{
+      width: 98%;
+    }
+}
+
 </style>
 
 
@@ -490,12 +523,12 @@ body{
               <div class="openModal">
                 <a href="#" >
                     <img class="ren" src="image/member-ren1.svg" alt="ren">
-                    <img class="sticker"" src="image/sticker.svg" alt="sticker"></a></div></div>
+                    <img class="sticker" src="image/member_sticker.svg" alt="sticker"></a></div></div>
             <div class="slide">
                 <div class="diPic">
                   <a href="#">
                 <img  class="ren" src="image/member-di.svg" alt="di">
-                <img class="sticker"" src="image/sticker.svg" alt="sticker"></a></div></div>
+                <img class="sticker" src="image/member_sticker.svg" alt="sticker"></a></div></div>
           </div>
 
 
